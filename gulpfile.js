@@ -33,5 +33,5 @@ exports.default = gulp.parallel(
 );
 
 gulp.task("deploy", function () {
-    return gulp.src("./dist/**/*").pipe(ghPages());
+    return gulp.src("./build/**/*").pipe(ghPages());
 });
