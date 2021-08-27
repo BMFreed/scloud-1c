@@ -9,7 +9,8 @@
         <title>Document</title>
     </head>
     <body>
-        <header class="header" id="header">
+        <div class="wrapper">
+            <header class="header" id="header">
     <a href="#header"><img class="header__logo" src="img/logo.svg" alt="" /></a>
     <nav>
         <ul class="header__menu u-list">
@@ -35,8 +36,8 @@
     <button class="button">Регистрация</button>
 </header>
 
-        <main class="main">
-            <section class="title-section">
+            <main class="main">
+                <section class="title-section">
     <div>
         <h1>1С: Зарплата и управление персоналом 8</h1>
         <p>Цена - от 760 ₽ в месяц*</p>
@@ -52,7 +53,7 @@
     </svg>
 </section>
 
-            <section class="features">
+                <section class="features">
     <h2>Основные возможности</h2>
     <ul>
         <li>Учёт заработной платы</li>
@@ -65,42 +66,42 @@
         <li>Управление денежными расчетами с персоналом, включая депонирование</li>
     </ul>
 </section>
-            <section class="advantages">
+                <section class="advantages">
     <h2>Преимущества аренды 1С в облаке</h2>
     <ul>
         <li>
             <svg>
-                <use xlink:href=""></use>
+                <use xlink:href="img/sprite.svg#advantages--box"></use>
             </svg>
             <span>Бесплатные консультации по работе в 1С</span>
         </li>
         <li>
             <svg>
-                <use xlink:href=""></use>
+                <use xlink:href="img/sprite.svg#advantages--headphones"></use>
             </svg>
             <span>Поддержка 24/7 настоящих профи 1С</span>
         </li>
         <li>
             <svg>
-                <use xlink:href=""></use>
+                <use xlink:href="img/sprite.svg#advantages--money"></use>
             </svg>
             <span>Уникальные финансовые гарантии</span>
         </li>
         <li>
             <svg>
-                <use xlink:href=""></use>
+                <use xlink:href="img/sprite.svg#advantages--home"></use>
             </svg>
             <span>Возможность работать в 1С из дома и офиса</span>
         </li>
         <li>
             <svg>
-                <use xlink:href=""></use>
+                <use xlink:href="img/sprite.svg#advantages--clock"></use>
             </svg>
             <span>Круглосуточный доступ в 1С</span>
         </li>
         <li>
             <svg>
-                <use xlink:href=""></use>
+                <use xlink:href="img/sprite.svg#advantages--plus-circle"></use>
             </svg>
             <span>Попробуйте 1С: ЗУП 8</span>
             <a href="##">Попробовать бесплатно</a>
@@ -108,7 +109,7 @@
     </ul>
 </section>
 
-            <section class="client-types">
+                <section class="client-types">
     <h2>Кому подойдет 1С: ЗУП 8?</h2>
     <p>
         В качестве дополнительного функционала данный программный продукт позволяет довести до
@@ -198,7 +199,7 @@
     </section>
 </section>
 
-            <section class="comparison">
+                <section class="comparison">
     <h2>Сравнение функционала версий ПРОФ и КОРП</h2>
     <table>
         <tbody>
@@ -281,8 +282,8 @@
     </table>
 </section>
 
-            <section class="slider">Здесь будет слайдер</section>
-            <section class="fb-request">
+                <section class="slider">Здесь будет слайдер</section>
+                <section class="fb-request">
     <h2>Цена на 1С: ЗУП 8 онлайн от 760 ₽ в месяц</h2>
     <form action="">
     <div>
@@ -293,7 +294,7 @@
     </div>
     <div>
         <button type="submit">Попробовать 14 дней бесплатно</button>
-        <p style="display: none">
+        <p>
             Начиная работу, я принимаю условия <span>Оферты</span> и соглашаюсь на обработку
             персональных данных в соответствии с <span>Политикой конфиденциальности</span>
         </p>
@@ -302,7 +303,7 @@
 
 </section>
 
-            <section class="f-reports">
+                <section class="f-reports">
     <h2>С какими отчетами Вы можете работать?</h2>
     <ul>
         <li>Формирование списков кандидатов на работу, работников компании и ее подразделений;</li>
@@ -312,7 +313,7 @@
         <li>Отчеты по плановому и фактическому состоянию штатного расписания и многие другие.</li>
     </ul>
 </section>
-            <section class="why-us">
+                <section class="why-us">
     <h2>Почему пользователи выбирают Scloud?</h2>
     <div>
         <ul>
@@ -340,15 +341,13 @@
     </svg>
 </section>
 
-            <section class="more-products">
+                <section class="more-products">
     <h2>Возможно вас заинтересует</h2>
     <ul>
         <li>
             <div>
                 <h3>1С: Бухгалтерия ПРОФ/КОРП</h3>
-                <svg>
-                    <use xlink:href></use>
-                </svg>
+                <img src="img/more-products/shelf.svg" alt="icon">
             </div>
             <p>
                 Конфигурация разработана в соответствии с нормами действующего законодательства.
@@ -360,9 +359,7 @@
         <li>
             <div>
                 <h3>Информационно- справочная система 1С</h3>
-                <svg>
-                    <use xlink:href></use>
-                </svg>
+                <img src="img/more-products/book.svg" alt="icon">
             </div>
             <p>
                 В системе представлены новости, комментарии и консультации по вопросам
@@ -374,9 +371,7 @@
         <li>
             <div>
                 <h3>1С: Отчетность</h3>
-                <svg>
-                    <use xlink:href></use>
-                </svg>
+                <img src="img/more-products/pages.svg" alt="icon">
             </div>
             <p>
                 Позволяет сдавать отчётность со своего ПК прямо из 1С в контролирующие органы: ФНС,
@@ -387,7 +382,7 @@
     </ul>
 </section>
 
-            <section class="start-now">
+                <section class="start-now">
     <h2>Начните пользоваться 1С прямо сейчас</h2>
     <form action="">
     <div>
@@ -398,7 +393,7 @@
     </div>
     <div>
         <button type="submit">Попробовать 14 дней бесплатно</button>
-        <p style="display: @@display">
+        <p>
             Начиная работу, я принимаю условия <span>Оферты</span> и соглашаюсь на обработку
             персональных данных в соответствии с <span>Политикой конфиденциальности</span>
         </p>
@@ -406,8 +401,8 @@
 </form>
 
 </section>
-        </main>
-        <footer class="footer">
+            </main>
+            <footer class="footer">
     <hr />
     <section class="footer__products">
         <ul>
@@ -470,39 +465,39 @@
         <ul class="footer__sm">
             <li>
                 <a href="##">
-                    <svg><use xlink:href=""></use></svg>
+                    <svg><use xlink:href="img/sprite.svg#footer--sm--inst"></use></svg>
                 </a>
             </li>
             <li>
                 <a href="##">
-                    <svg><use xlink:href=""></use></svg>
+                    <svg><use xlink:href="img/sprite.svg#footer--sm--fb"></use></svg>
                 </a>
             </li>
             <li>
                 <a href="##">
-                    <svg><use xlink:href=""></use></svg>
+                    <svg><use xlink:href="img/sprite.svg#footer--sm--vk"></use></svg>
                 </a>
             </li>
             <li>
                 <a href="##">
-                    <svg><use xlink:href=""></use></svg>
+                    <svg><use xlink:href="img/sprite.svg#footer--sm--ok"></use></svg>
                 </a>
             </li>
             <li>
                 <a href="##">
-                    <svg><use xlink:href=""></use></svg>
+                    <svg><use xlink:href="img/sprite.svg#footer--sm--youtube"></use></svg>
                 </a>
             </li>
         </ul>
         <ul class="footer__download">
             <li>
                 <a href="##">
-                    <svg><use xlink:href=""></use></svg>
+                    <svg><use xlink:href="img/sprite.svg#footer--download--app-store-badge"></use></svg>
                 </a>
             </li>
             <li>
                 <a href="##">
-                    <svg><use xlink:href=""></use></svg>
+                    <svg><use xlink:href="img/sprite.svg#footer--download--google-play-badge"></use></svg>
                 </a>
             </li>
         </ul>
@@ -517,6 +512,7 @@
     </section>
 </footer>
  
+        </div>
     </body>
     <script src="js/main.min.js"></script>
 </html>
