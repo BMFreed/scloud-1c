@@ -1,9 +1,52 @@
 .wrapper {
     font-family: "ptsans";
+    font-size: $main-font-size;
+    color: $main-text-color;
+    background-color: $bright;
 }
 
 .flex {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button {
+    background-color: $accent;
+    color: $bright;
+    border: none;
+    border-radius: 50px;
+    font-family: "ptsans-caption";
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.list-common {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.learn-more {
+    font-family: "ptsans-caption";
+    font-weight: bold;
+    font-size: $main-font-size -2px;
+    color: $accent;
+    text-decoration: underline;
+
+    &-light {
+        font-family: "ptsans";
+        font-weight: normal;
+    }
+}
+
+.hidden {
+    display: none;
 }
