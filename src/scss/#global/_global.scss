@@ -1,8 +1,21 @@
+//Глобальные классы
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
-    font-family: "ptsans";
+    font-family: "PT Sans";
     font-size: $main-font-size;
     color: $main-text-color;
     background-color: $bright;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    padding: 0 $noclip;
+    margin: 0 auto;
+    box-sizing: content-box;
 }
 
 .flex {
@@ -14,13 +27,19 @@
 .button {
     background-color: $accent;
     color: $bright;
+    transition: $main-transition;
     border: none;
     border-radius: 50px;
-    font-family: "ptsans-caption";
+    font-family: "PT Sans Caption";
     font-weight: bold;
+    font-size: 14px;
     cursor: pointer;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+    &:hover {
+        background-color: darken($accent, 5%);
+    }
 }
 
 .link {
@@ -35,18 +54,18 @@
 }
 
 .learn-more {
-    font-family: "ptsans-caption";
+    font-family: "PT Sans Caption";
     font-weight: bold;
-    font-size: $main-font-size -2px;
+    font-size: $main-font-size - 2;
     color: $accent;
     text-decoration: underline;
 
-    &-light {
-        font-family: "ptsans";
+    &_light {
+        font-family: "PT Sans";
         font-weight: normal;
     }
 }
 
-.hidden {
+.visually-hidden {
     display: none;
 }

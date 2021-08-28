@@ -46,3 +46,23 @@
     appearance: none;
     display: #{$display};
 }
+
+@mixin hover-line {
+    margin-top: 2px;
+    //Здесь мы корректируем margin, т.к. ховер-эффект толкает текст вверх на свою высоту.
+    &::after {
+        display: block;
+        content: "";
+        background-color: $main-text-color;
+        height: 2px;
+        width: 0%;
+        position: relative;
+        transition: $main-transition;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}

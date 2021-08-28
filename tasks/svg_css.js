@@ -13,5 +13,5 @@ module.exports = function svg_css() {
                 addSize: false,
             })
         )
-        .pipe(dest("src/scss/global"));
+        .pipe(dest("src/scss/#global"));
 };

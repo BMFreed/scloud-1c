@@ -11,29 +11,61 @@
     <body>
         <div class="wrapper">
             <header class="header" id="header">
-    <a href="#header"><img class="header__logo" src="img/logo.svg" alt="" /></a>
-    <nav>
-        <ul class="header__menu u-list">
-            <li>Решения</li>
-            <li>Тарифы</li>
-            <li>Помощь</li>
-            <li>Компания</li>
-            <li>Партнёрам</li>
-        </ul>
-    </nav>
-    <button class="header__search">
-        <svg>
-            <use xlink:href="img/sprite.svg#header--search"></use>
-        </svg>
-    </button>
-    <a href="tel:+78005559115">8 (800) 555-91-15</a>
-    <button class="header__login">
-        <svg>
-            <use xlink:href="img/sprite.svg#header--login"></use>
-        </svg>
-        <span>Вход</span>
-    </button>
-    <button class="button">Регистрация</button>
+    <div class="container flex">
+        <a class="header__logo" href="#header"><img src="img/logo.svg" alt="" /></a>
+        <nav class="navigation">
+            <ul class="navigation__menu flex list-common">
+                <li class="navigation__item">
+                    <details class="navigation__dropdown">
+                        <summary class="flex">Решения</summary>
+                        <ul class="navigation__submenu list-common flex">
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="navigation__item"><a class="link" href="##">Тарифы</a></li>
+                <li class="navigation__item">
+                    <details class="navigation__dropdown">
+                        <summary class="flex">Помощь</summary>
+                        <ul class="navigation__submenu list-common flex">
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="navigation__item">
+                    <details class="navigation__dropdown">
+                        <summary class="flex">Компания</summary>
+                        <ul class="navigation__submenu list-common flex">
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                            <li><a class="link" href="##">Пункт меню</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="navigation__item"><a class="link" href="##">Партнёрам</a></li>
+            </ul>
+        </nav>
+        <button class="header__button header__search">
+            <svg>
+                <use xlink:href="img/sprite.svg#header--search"></use>
+            </svg>
+        </button>
+        <a class="header__link link" href="tel:+78005559115">8 (800) 555-91-15</a>
+        <button class="header__button header__login flex">
+            <svg>
+                <use xlink:href="img/sprite.svg#header--login"></use>
+            </svg>
+            <span class="header__link">Вход</span>
+        </button>
+        <button class="header__sign-up button">Регистрация</button>
+    </div>
 </header>
 
             <main class="main">
@@ -492,12 +524,12 @@
         <ul class="footer__download">
             <li>
                 <a href="##">
-                    <svg><use xlink:href="img/sprite.svg#footer--download--app-store-badge"></use></svg>
+                    <img src="img/footer/download/app-store-badge.svg" alt="app store">
                 </a>
             </li>
             <li>
                 <a href="##">
-                    <svg><use xlink:href="img/sprite.svg#footer--download--google-play-badge"></use></svg>
+                    <img src="img/footer/download/google-play-badge.svg" alt="google play">
                 </a>
             </li>
         </ul>

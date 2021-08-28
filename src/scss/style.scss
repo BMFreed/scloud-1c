@@ -1,5 +1,4 @@
 @import "base/*.scss";
-@import "global/_vars.scss";
-@import "global/*.scss";
+@import "#global/*.scss";
 @import "**/_*.scss";
-@import "../components/**/*.scss";
+@import "../blocks/**/*.scss"; 
