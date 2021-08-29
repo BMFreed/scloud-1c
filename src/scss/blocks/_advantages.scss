@@ -1,0 +1,49 @@
+.advantages {
+    &__heading {
+        margin-bottom: 34px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    &__item {
+        width: 384px;
+        height: 140px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 40px 30px;
+        gap: 24px;
+        justify-content: flex-start;
+        box-shadow: $main-box-shadow;
+        font-family: "PT Sans Caption";
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__image {
+        width: 60px;
+        height: 60px;
+        margin-top: 8px;
+    }
+
+    &__text-with-link {
+        flex-direction: column;
+        height: 60px;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 4px;
+    }
+
+    &__link {
+        font-size: $main-font-size - 2;
+        color: $accent;
+    }
+
+    &_block-margin {
+        margin-bottom: 112px;
+    }
+}
