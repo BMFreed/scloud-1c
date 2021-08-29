@@ -1,6 +1,4 @@
 .title-section {
-    padding-top: 22px;
-
     &__text-content {
         max-width: 690px;
     }
@@ -30,5 +28,9 @@
         width: 484px;
         height: 307px;
         margin-top: 10px;
+    }
+
+    &_block-margin {
+        margin-bottom: 110px;
     }
 }
