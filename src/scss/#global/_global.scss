@@ -10,19 +10,21 @@ html {
     background-color: $bright;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
     max-width: 1200px;
     height: 100%;
     padding: 0 $noclip;
     margin: 0 auto;
     box-sizing: content-box;
+    justify-content: space-between;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .button {
     background-color: $accent;
@@ -34,8 +36,8 @@ html {
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     &:hover {
         background-color: darken($accent, 5%);
@@ -45,6 +47,7 @@ html {
 .link {
     text-decoration: inherit;
     color: inherit;
+    white-space: nowrap;
 }
 
 .list-common {
