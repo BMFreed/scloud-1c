@@ -16,6 +16,15 @@
 .--svg__checkmark-circle-after::after {
     content:'';
 }
+.--svg__checkmark-green,.--svg__checkmark-green-before::before,.--svg__checkmark-green-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='20' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 2 7 13 2 8' stroke='%23178A00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.--svg__checkmark-green-before::before {
+    content:'';
+}
+.--svg__checkmark-green-after::after {
+    content:'';
+}
 .--svg__checkmark,.--svg__checkmark-before::before,.--svg__checkmark-after::after{
     background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='20' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 2 7 13 2 8' stroke='%23F60' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }

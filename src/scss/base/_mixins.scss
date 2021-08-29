@@ -9,44 +9,6 @@
     }
 }
 
-@mixin bg($size: "contain", $position: "center") {
-    background-size: #{$size};
-    background-position: #{$position};
-    background-repeat: no-repeat;
-}
-
-@mixin btn_anim($scaleMax: 1.05, $scaleMin: 0.95) {
-    transform-origin: center center;
-    transition: all ease-out 240ms;
-
-    &:hover {
-        transform: scale($scaleMax);
-    }
-
-    &:focus {
-        outline: transparent;
-    }
-
-    &:focus-visible {
-        transform: scale($scaleMax) translateY(-5%);
-    }
-
-    &:active {
-        transform: scale($scaleMin);
-    }
-}
-
-@mixin no-btn($display: "inline-block") {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    background-color: transparent;
-    border-radius: 0;
-    cursor: pointer;
-    appearance: none;
-    display: #{$display};
-}
-
 @mixin hover-line {
     margin-top: 2px;
     //Здесь мы корректируем margin, т.к. ховер-эффект толкает текст вверх на свою высоту.
@@ -65,4 +27,8 @@
             width: 100%;
         }
     }
+}
+
+@mixin checkmark ($stroke) {
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='20' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 2 7 13 2 8' stroke='#{$stroke}' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }

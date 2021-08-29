@@ -1,0 +1,68 @@
+.comparison {
+    &__container {
+        flex-direction: column;
+    }
+
+    &__heading {
+        align-self: flex-start;
+        margin-bottom: 45px;
+    }
+
+    &__table {
+        border-radius: $main-border-radius;
+        border-spacing: 0px;
+        box-shadow: $main-box-shadow;
+        width: 1200px;
+        padding-top: 48px;
+        padding-bottom: 10px;
+    }
+
+    &__sub-headings th {
+        padding-bottom: 24px;
+    }
+
+    &__features {
+        text-align: left;
+    }
+
+    &__prof {
+        padding-right: 106px;
+    }
+
+    &__corp {
+        padding-right: 82px;
+    }
+
+    &__feature {
+        td {
+            border-bottom: 2px solid $neutral-border-color;
+            padding-top: 23px;
+            padding-bottom: 23px;
+        }
+
+        &:last-child td {
+            border-bottom: none;
+        }
+    }
+
+    &__features,
+    &__feature td {
+        padding-left: 60px;
+    }
+
+    &__included {
+        @include checkmark("%23178A00");
+        background-repeat: no-repeat;
+        background-position: 40px 24px;
+
+        &_left {
+            background-position: 46px 24px;
+        }
+    }
+
+    &__not-included {
+        background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='16' height='4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2h12' stroke='%23F60' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: 48px 29px;
+    }
+}
