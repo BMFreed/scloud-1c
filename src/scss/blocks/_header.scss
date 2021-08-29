@@ -1,4 +1,9 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $bright;
     font-size: $main-font-size - 1;
     height: 85px;
     border-bottom: 1px solid $section-border;
@@ -57,10 +62,6 @@
     &__sign-up {
         padding-left: 36px;
         padding-right: 36px;
-    }
-
-    &_block-margin {
-        margin-bottom: 132px;
     }
 }
 
