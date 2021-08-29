@@ -184,63 +184,111 @@
     </div>
 </section>
 
-                <section class="client-types">
+                <section class="client-types client-types_block-margin">
     <div class="container">
-        <h2 class="heading heading_secondary">Кому подойдет 1С: ЗУП 8?</h2>
-        <p>
+        <h2 class="client-types__heading heading heading_secondary">Кому подойдет 1С: ЗУП 8?</h2>
+        <p class="client-types__summary margin-reset">
             В качестве дополнительного функционала данный программный продукт позволяет довести до
             автоматизма большинство процессов управления персоналом, например, составление планов
-            потребности в новых кадрах, подбор и управление финансовой заинтересованностью персонала, а
-            также автоматизация кадрого учета.
+            потребности в новых кадрах, подбор и управление финансовой заинтересованностью
+            персонала, а также автоматизация кадрого учета.
         </p>
-        <ul>
-            <li><button>Руководителям</button></li>
-            <li><button>Бухгалтерам и отделу кадров</button></li>
-            <li><button>Сотрудникам</button></li>
-            <li><button>HR</button></li>
+        <ul class="client-types__buttons list-common flex">
+            <li>
+                <button
+                    class="button button_hollow"
+                    style="padding-left: 35px; padding-right: 35px"
+                >
+                    Руководителям
+                </button>
+            </li>
+            <li>
+                <button
+                    class="button button_hollow"
+                    style="padding-left: 36px; padding-right: 36px"
+                >
+                    Бухгалтерам и отделу кадров
+                </button>
+            </li>
+            <li>
+                <button
+                    class="button button_hollow"
+                    style="padding-left: 43px; padding-right: 43px"
+                >
+                    Сотрудникам
+                </button>
+            </li>
+            <li>
+                <button
+                    style="padding-left: 28px; padding-right: 28px"
+                    class="button button_hollow"
+                >
+                    HR
+                </button>
+            </li>
         </ul>
         <section class="executives">
-            <h3>Руководителям</h3>
-            <ul>
+            <h3 class="visually-hidden">Руководителям</h3>
+            <ul class="client-types__list list-common">
                 <li>
-                    <h4>Руководство компании</h4>
-                    <ul>
-                        <li>Качество персонала</li>
-                        <li>Эффективность процессов управления персоналом</li>
-                        <li>Затраты на персонал</li>
-                        <li>Производительность труда и выполнение KPI</li>
+                    <h4 class="client-types__sub-heading heading heading_quaternary">
+                        Руководство компании
+                    </h4>
+                    <ul class="feature-list-secondary flex">
+                        <li class="feature-list-secondary__item flex">Качество персонала</li>
+                        <li class="feature-list-secondary__item flex">
+                            Эффективность процессов управления персоналом
+                        </li>
+                        <li class="feature-list-secondary__item flex">Затраты на персонал</li>
+                        <li class="feature-list-secondary__item flex">
+                            Производительность труда и выполнение KPI
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <h4>Руководство подразделений</h4>
-                    <ul>
-                        <li>Квалификация персонала</li>
-                        <li>Загрузка сотрудников</li>
-                        <li>Эффективность системы мотивации</li>
-                        <li>Предложения по изменению мотивации</li>
-                        <li>Заявки на обучение</li>
-                        <li>Заявки на подбор</li>
+                    <h4 class="client-types__sub-heading heading heading_quaternary">
+                        Руководство подразделений
+                    </h4>
+                    <ul class="feature-list-secondary flex">
+                        <li class="feature-list-secondary__item flex">Квалификация персонала</li>
+                        <li class="feature-list-secondary__item flex">Загрузка сотрудников</li>
+                        <li class="feature-list-secondary__item flex">
+                            Эффективность системы мотивации
+                        </li>
+                        <li class="feature-list-secondary__item flex">
+                            Предложения по изменению мотивации
+                        </li>
                     </ul>
                 </li>
             </ul>
         </section>
         <section class="accountants-hr visually-hidden">
-            <h3>Бухгалтерам и отделу кадров</h3>
-            <ul>
+            <h3 class="visually-hidden">Бухгалтерам и отделу кадров</h3>
+            <ul class="client-types__list">
                 <li>
-                    <h4>Бухгалтерия</h4>
-                    <ul>
-                        <li>Структура начисления зарплаты</li>
-                        <li>Данные для расчета налогов и выплат в фонды</li>
-                        <li>Начисление и выплата зарплаты, налогов</li>
-                        <li>Бюджет затрат на персонал</li>
-                        <li>Исполнение бюджета</li>
-                        <li>Отклонения от бюджета</li>
+                    <h4 class="client-types__sub-heading heading heading_quaternary">
+                        Бухгалтерия
+                    </h4>
+                    <ul class="feature-list-secondary">
+                        <li class="feature-list-secondary__item flex">
+                            Структура начисления зарплаты
+                        </li>
+                        <li class="feature-list-secondary__item flex">
+                            Данные для расчета налогов и выплат в фонды
+                        </li>
+                        <li class="feature-list-secondary__item flex">
+                            Начисление и выплата зарплаты, налогов
+                        </li>
+                        <li class="feature-list-secondary__item flex">Бюджет затрат на персонал</li>
+                        <li class="feature-list-secondary__item flex">Исполнение бюджета</li>
+                        <li class="feature-list-secondary__item flex">Отклонения от бюджета</li>
                     </ul>
                 </li>
                 <li>
-                    <h4>Отдел кадров</h4>
-                    <ul>
+                    <h4 class="client-types__sub-heading heading heading_quaternary">
+                        Отдел кадров
+                    </h4>
+                    <ul class="feature-list-secondary">
                         <li>Качетственный состав работников</li>
                         <li>Данные о сотрудниках</li>
                         <li>Перемещение кадров</li>
@@ -249,8 +297,8 @@
             </ul>
         </section>
         <section class="employees visually-hidden">
-            <h3>Сотрудникам</h3>
-            <ul>
+            <h3 class="visually-hidden">Сотрудникам</h3>
+            <ul class="feature-list-secondary">
                 <li>Начисленная зарплата</li>
                 <li>Оставшиеся дни отпуска</li>
                 <li>Заявки на отпуск</li>
@@ -260,8 +308,8 @@
             </ul>
         </section>
         <section class="hr visually-hidden">
-            <h3>HR</h3>
-            <ul>
+            <h3 class="visually-hidden">HR</h3>
+            <ul class="feature-list-secondary">
                 <li>Потребность в кадрах</li>
                 <li>Квалификация персонала</li>
                 <li>Кадровый резерв</li>
@@ -277,86 +325,88 @@
 </section>
 
                 <section class="comparison">
-    <h2>Сравнение функционала версий ПРОФ и КОРП</h2>
-    <table>
-        <tbody>
-            <tr>
-                <th>Возможности</th>
-                <th>ПРОФ</th>
-                <th>КОРП</th>
-            </tr>
-            <tr>
-                <td>Кадровый резерв и управление талантами</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Поддержка грейдов</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Адаптация, обучение и развитие</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Анализ расходов на персонал по проектам и направлениям деятельности</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Удаленный доступ для линейных руководителей и сотрудников</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Финансовая мотивация с использованием показателей эффективности (KPI)</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Импорт значений показателей из 1С:Управление торговлей и 1С:Розница</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Учет деятельности нескольких организаций</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Возможность изменения (конфигурирования) прикладного решения</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Учет кадров и анализ кадрового состава</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Расчет и учет заработной платы</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Управление денежными расчетами, включая депонирование</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Исчисление налогов и страховых взносов (в т.ч. для УСН и ЕНВД)</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Подготовка регламентированной отчетности</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <h2 class="heading heading_secondary">Сравнение функционала версий ПРОФ и КОРП</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Возможности</th>
+                    <th>ПРОФ</th>
+                    <th>КОРП</th>
+                </tr>
+                <tr>
+                    <td>Кадровый резерв и управление талантами</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Поддержка грейдов</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Адаптация, обучение и развитие</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Анализ расходов на персонал по проектам и направлениям деятельности</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Удаленный доступ для линейных руководителей и сотрудников</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Финансовая мотивация с использованием показателей эффективности (KPI)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Импорт значений показателей из 1С:Управление торговлей и 1С:Розница</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Учет деятельности нескольких организаций</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Возможность изменения (конфигурирования) прикладного решения</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Учет кадров и анализ кадрового состава</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Расчет и учет заработной платы</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Управление денежными расчетами, включая депонирование</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Исчисление налогов и страховых взносов (в т.ч. для УСН и ЕНВД)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Подготовка регламентированной отчетности</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 
                 <section class="slider">Здесь будет слайдер</section>

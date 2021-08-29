@@ -11,7 +11,6 @@ html {
 
 .margin-reset {
     margin: 0;
-    padding: 0;
 }
 
 .fixed-header-margin {
@@ -52,6 +51,11 @@ html {
     &_secondary {
         font-size: 32px;
     }
+
+    &_quaternary {
+        margin: 0;
+        font-size: 20px;
+    }
 }
 
 .button {
@@ -69,6 +73,19 @@ html {
 
     &:hover {
         background-color: darken($accent, 5%);
+    }
+
+    &_hollow {
+        background: none;
+        border: 2px solid #eaeaea;
+        color: $main-text-color;
+
+        &:focus,
+        &:hover {
+            background: none;
+            border-color: $accent;
+            color: $accent;
+        }
     }
 }
 
@@ -109,6 +126,7 @@ html {
         justify-content: flex-start;
         align-items: flex-start;
         gap: 25px;
+        
         &::before {
             // Изображение галочки в круге
             background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='23' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.067 10.086v.92a9.978 9.978 0 0 1-1.997 5.982 10.033 10.033 0 0 1-5.192 3.602 10.065 10.065 0 0 1-6.322-.21 10.028 10.028 0 0 1-4.94-3.937 9.975 9.975 0 0 1 .79-11.94 10.04 10.04 0 0 1 5.416-3.257 10.064 10.064 0 0 1 6.295.62' stroke='%23F76201' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='m21.067 3.006-10.034 10.01-3.01-3' stroke='%23F76201' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -119,6 +137,32 @@ html {
             width: 28px;
             height: 22px;
             margin-top: 5px;
+        }
+    }
+}
+
+.feature-list-secondary {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+
+    &__item {
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 18px;
+        
+        &::before {
+            //Изображение галочки
+            background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='20' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 2 7 13 2 8' stroke='%23F60' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            content: "";
+            display: block;
+            //Снова задаём чуть больше места для корректного отображения.
+            width: 22px;
+            height: 16px;
         }
     }
 }

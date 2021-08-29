@@ -7,6 +7,7 @@
     font-size: $main-font-size - 1;
     height: 85px;
     border-bottom: 1px solid $section-border;
+    visibility: hidden;
 
     &__left-content {
         margin-right: $noclip;

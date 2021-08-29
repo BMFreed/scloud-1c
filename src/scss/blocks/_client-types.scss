@@ -1,0 +1,33 @@
+.client-types {
+    &__heading {
+        margin-bottom: 27px;
+    }
+
+    &__summary {
+        font-size: $main-font-size * 1.125;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        max-width: 1098px;
+        margin-bottom: 38px;
+    }
+
+    &__buttons {
+        justify-content: flex-start;
+        gap: 21px;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    &__sub-heading {
+        margin-bottom: 36px;
+    }
+
+    &_block-margin {
+        margin-bottom: 115px;
+    }
+}
