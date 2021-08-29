@@ -3,17 +3,31 @@ html {
     scroll-behavior: smooth;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-margin {
+    margin-bottom: 110px;
+}
+
+.margin-reset {
+    margin: 0;
+    padding: 0;
+}
+
+.text-medium {
+    font-size: $main-font-size * 1.25;
+    line-height: 30px;
+}
+
 .wrapper {
     font-family: "PT Sans";
     font-size: $main-font-size;
     color: $main-text-color;
     background-color: $bright;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .container {
@@ -25,6 +39,20 @@ html {
     justify-content: space-between;
 }
 
+.heading {
+    margin: 0;
+    font-family: "PT Sans Caption";
+    font-weight: bold;
+
+    &_primary {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    &_secondary {
+        font-size: 32px;
+    }
+}
 
 .button {
     background-color: $accent;
@@ -34,7 +62,7 @@ html {
     border-radius: 50px;
     font-family: "PT Sans Caption";
     font-weight: bold;
-    font-size: 14px;
+    font-size: $main-font-size - 2;
     cursor: pointer;
     padding-top: 16px;
     padding-bottom: 16px;

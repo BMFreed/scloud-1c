@@ -1,0 +1,34 @@
+.title-section {
+    padding-top: 22px;
+
+    &__text-content {
+        max-width: 690px;
+    }
+
+    &__price {
+        margin-top: 35px;
+        color: $accent;
+    }
+
+    &__description {
+        margin-top: 33px;
+        max-width: 628px;
+    }
+
+    &__try {
+        margin-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &__notice {
+        margin-top: 18px;
+        color: lighten($secondary-text-color, 20%);
+    }
+
+    &__image {
+        width: 484px;
+        height: 307px;
+        margin-top: 8px;
+    }
+}

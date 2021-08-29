@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <header class="header" id="header">
+            <header class="header block-margin" id="header">
     <div class="container flex">
         <div class="header__left-content flex">
             <a class="header__logo" href="#header"><img src="img/logo.svg" alt="" /></a>
@@ -73,20 +73,26 @@
 </header>
 
             <main class="main">
-                <section class="title-section">
-    <div>
-        <h1>1С: Зарплата и управление персоналом 8</h1>
-        <p>Цена - от 760 ₽ в месяц*</p>
-        <p>
-            Программа позволяет эффективно организовать комплексный учет кадров, а также
-            автоматизировать процесс подсчета зарплаты и других выплат сотрудникам
-        </p>
-        <button class="button"><a class="link" href="##">Попробовать 14 дней бесплатно</a></button>
-        <p>*входит в тарифы</p>
+                <section class="title-section block-margin">
+    <div class="container flex">
+        <div class="title-section__text-content">
+            <h1 class="heading heading_primary">1С: Зарплата и управление персоналом 8</h1>
+            <p class="title-section__price heading heading_secondary">
+                Цена - от 760 &#8399; в месяц*
+            </p>
+            <p class="title-section__description text-medium margin-reset">
+                Программа позволяет эффективно организовать комплексный учет кадров, а также
+                автоматизировать процесс подсчета зарплаты и других выплат сотрудникам
+            </p>
+            <button class="title-section__try button">
+                <a class="link" href="##">Попробовать 14 дней бесплатно</a>
+            </button>
+            <p class="title-section__notice margin-reset">*входит в тарифы</p>
+        </div>
+        <svg class="title-section__image">
+            <use xlink:href="img/sprite.svg#title-section--image"></use>
+        </svg>
     </div>
-    <svg>
-        <use xlink:href="img/sprite.svg#title-section--image"></use>
-    </svg>
 </section>
 
                 <section class="features">
@@ -552,6 +558,6 @@
     </body>
     <script src="js/main.min.js"></script>
     <script>
-        console.log("Чтобы правильно наложить макет, сдвиньте его на "+(Math.ceil((window.screen.width-document.documentElement.clientWidth)/2))+" пикселей влево");
+        console.log("Чтобы правильно наложить макет, сдвиньте его на "+(Math.ceil((window.innerWidth-document.documentElement.clientWidth)/2))+" пикселей влево");
     </script>
 </html>
