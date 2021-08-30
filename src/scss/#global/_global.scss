@@ -45,17 +45,21 @@ html {
     font-weight: bold;
 
     &_primary {
-        font-size: 40px;
+        font-size: $main-font-size * 2.5;
         line-height: 48px;
     }
 
     &_secondary {
-        font-size: 32px;
+        font-size: $main-font-size * 2;
+    }
+
+    &_tertiary {
+        font-size: $main-font-size * 1.125;
     }
 
     &_quaternary {
         margin: 0;
-        font-size: 20px;
+        font-size: $main-font-size * 1.25;
     }
 }
 

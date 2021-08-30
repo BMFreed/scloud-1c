@@ -582,52 +582,81 @@
         </div>
     </div>
 </section>
- <section class="more-products">
+ <section class="more-products more-products_block-margin">
     <div class="container">
-        <h2 class="heading heading_secondary">Возможно вас заинтересует</h2>
-        <ul>
-            <li>
+        <h2 class="more-products__heading heading heading_secondary">Возможно вас заинтересует</h2>
+        <ul class="more-products__list list-common flex">
+            <li class="more-products__item flex" style="margin-right: 66px">
                 <div>
-                    <h3>1С: Бухгалтерия ПРОФ/КОРП</h3>
-                    <img src="img/more-products/shelf.svg" alt="icon">
+                    <div class="more-products__title flex">
+                        <h3 class="heading heading_tertiary">
+                            1С: Бухгалтерия <br />
+                            ПРОФ/КОРП
+                        </h3>
+                        <img
+                            src="img/more-products/shelf.svg"
+                            alt="icon"
+                            style="width: 50px; height: 48px; margin-left: 8px"
+                        />
+                    </div>
+                    <p class="more-products__description margin-reset">
+                        Конфигурация разработана в соответствии с нормами действующего
+                        законодательства. <br />
+                        Учет хозяйственной деятельности, заработной платы, &nbsp; сдача отчетности в
+                        электронном виде.
+                    </p>
                 </div>
-                <p>
-                    Конфигурация разработана в соответствии с нормами действующего законодательства.
-                    Учет хозяйственной деятельности, заработной платы, сдача отчетности в электронном
-                    виде.
-                </p>
-                <a href="##">Подробнее</a>
+                <a class="more-products__learn-more learn-more flex" href="##">Подробнее</a>
             </li>
-            <li>
+            <li class="more-products__item flex" style="margin-right: 62px">
                 <div>
-                    <h3>Информационно- справочная система 1С</h3>
-                    <img src="img/more-products/book.svg" alt="icon">
+                    <div class="more-products__title flex">
+                        <h3 class="heading heading_tertiary">
+                            Информационно- справочная система 1С
+                        </h3>
+                        <img
+                            src="img/more-products/book.svg"
+                            alt="icon"
+                            style="width: 82px; height: 42px; margin-left: 4px"
+                        />
+                    </div>
+                    <p class="more-products__description margin-reset">
+                        В системе представлены новости, комментарии и консультации по вопросам
+                        бухгалтерского, налогового и кадрового учета, рекомендации <br />
+                        по налогообложению, пошаговые инструкции <br />
+                        по их отражению в программе.
+                    </p>
                 </div>
-                <p>
-                    В системе представлены новости, комментарии и консультации по вопросам
-                    бухгалтерского, налогового и кадрового учета, рекомендациипо налогообложению,
-                    пошаговые инструкции по их отражению в программе.
-                </p>
-                <a href="##">Подробнее</a>
+                <a class="more-products__learn-more learn-more flex" href="##">Подробнее</a>
             </li>
-            <li>
+            <li class="more-products__item flex">
                 <div>
-                    <h3>1С: Отчетность</h3>
-                    <img src="img/more-products/pages.svg" alt="icon">
+                    <div class="more-products__title flex">
+                        <h3 class="heading heading_tertiary" style="margin-bottom: 22px">
+                            1С: Отчетность
+                        </h3>
+                        <img
+                            src="img/more-products/pages.svg"
+                            alt="icon"
+                            style="width: 51px; height: 47px"
+                        />
+                    </div>
+                    <p class="more-products__description margin-reset">
+                        Позволяет сдавать отчётность со своего ПК прямо из 1С в контролирующие
+                        органы: ФНС, ПФР, ФСС, Федеральная служба государственной статистики,
+                        Росалкогольрегулирование.
+                    </p>
                 </div>
-                <p>
-                    Позволяет сдавать отчётность со своего ПК прямо из 1С в контролирующие органы: ФНС,
-                    ПФР, ФСС, Федеральная служба государственной статистики, Росалкогольрегулирование.
-                </p>
-                <a href="##">Подробнее</a>
+                <a class="more-products__learn-more learn-more flex" href="##">Подробнее</a>
             </li>
         </ul>
     </div>
 </section>
 
                 <section class="start-now">
-    <h2>Начните пользоваться 1С прямо сейчас</h2>
-    <form class="request-form">
+    <div class="container">
+        <h2 class="heading heading_secondary">Начните пользоваться 1С прямо сейчас</h2>
+        <form class="request-form">
     <div class="request-form__field-container flex">
         <input class="request-form__input" type="text" placeholder="Имя*" />
         <div class="request-form__input request-form__input_phone flex">
@@ -656,6 +685,7 @@
     </div>
 </form>
 
+    </div>
 </section>
             </main>
             <footer class="footer">

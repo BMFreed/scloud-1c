@@ -1,0 +1,37 @@
+.more-products {
+    &__heading {
+        margin-bottom: 86px;
+    }
+
+    &__title {
+        justify-content: flex-start;
+        margin-bottom: 24px;
+        line-height: 23px;
+        h3 {
+            order: 2;
+        }
+        img {
+            margin-right: 45px;
+        }
+    }
+
+    &__list {
+        justify-content: flex-start;
+    }
+
+    &__item {
+        max-width: 344px;
+        min-height: 225px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__description {
+        line-height: 24px;
+    }
+
+    &_block-margin {
+        margin-bottom: 110px;
+    }
+}
