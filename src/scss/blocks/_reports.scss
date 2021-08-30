@@ -9,9 +9,11 @@
         max-width: 890px;
     }
 
-    &__margin-fix {
-        &::before {
-            margin-right: 6px;
-        }
+    &__gap-fix {
+        gap: 28px
+    }
+
+    &_block-margin {
+        margin-bottom: 134px;
     }
 }

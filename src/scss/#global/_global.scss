@@ -110,9 +110,8 @@ html {
     color: $accent;
     text-decoration: underline;
 
-    &_light {
-        font-family: "PT Sans";
-        font-weight: normal;
+    &::after {
+        @include learn-more-arrow;
     }
 }
 
@@ -170,6 +169,7 @@ html {
             //Снова задаём чуть больше места для корректного отображения.
             width: 22px;
             height: 16px;
+            background-position: -1px 3px;
         }
     }
 }
