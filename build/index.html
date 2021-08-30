@@ -696,13 +696,15 @@
                     <div>
                         <h3 class="footer__list-title margin-reset">Типовые решения</h3>
                         <ul class="list-common">
-                            <li>1С: Бухгалтерия ПРОФ/КОРП</li>
+                            <li><a class="link" href="##">1С: Бухгалтерия ПРОФ/КОРП</a></li>
                             <li>
-                                1С: Зарплата и управление <br />
-                                персоналом ПРОФ/КОРП
+                                <a class="link" href="##"
+                                    >1С: Зарплата и управление <br />
+                                    персоналом ПРОФ/КОРП
+                                </a>
                             </li>
-                            <li>1С: Комплексная автоматизация</li>
-                            <li>1С: Управление нашей фирмой</li>
+                            <li><a class="link" href="##">1С: Комплексная автоматизация</a></li>
+                            <li><a class="link" href="##">1С: Управление нашей фирмой</a></li>
                         </ul>
                     </div>
                     <details class="footer__show-more">
@@ -713,13 +715,15 @@
                     <div>
                         <h3 class="footer__list-title margin-reset">Отраслевые решения</h3>
                         <ul class="list-common">
-                            <li>1С: CRM ПРОФ</li>
+                            <li><a class="link" href="##">1С: CRM ПРОФ</a></li>
                             <li>
-                                1С: Учет в управляющих <br />
-                                компаниях ЖКХ, ТСЖ и ЖСК
+                                <a class="link" href="##"
+                                    >1С: Учет в управляющих <br />
+                                    компаниях ЖКХ, ТСЖ и ЖСК</a
+                                >
                             </li>
-                            <li>1С: Автосервис</li>
-                            <li>1С: Салон Красоты</li>
+                            <li><a class="link" href="##">1С: Автосервис</a></li>
+                            <li><a class="link" href="##">1С: Салон Красоты</a></li>
                         </ul>
                     </div>
                     <details class="footer__show-more">
@@ -730,11 +734,11 @@
                     <div>
                         <h3 class="footer__list-title margin-reset">Сервисы</h3>
                         <ul class="list-common" style="margin-right: 34px">
-                            <li>1С: Контрагент</li>
-                            <li>1C: СтартЭДО</li>
-                            <li>1С-Отчетность</li>
-                            <li>1С: Контрагент</li>
-                            <li>1СПАРК Риски</li>
+                            <li><a class="link" href="##">1С: Контрагент</a></li>
+                            <li><a class="link" href="##">1C: СтартЭДО</a></li>
+                            <li><a class="link" href="##">1С-Отчетность</a></li>
+                            <li><a class="link" href="##">1С: Контрагент</a></li>
+                            <li><a class="link" href="##"> 1СПАРК Риски</a></li>
                         </ul>
                     </div>
                 </li>
@@ -742,11 +746,11 @@
                     <div>
                         <h3 class="footer__list-title margin-reset">Доп.возможности</h3>
                         <ul class="list-common">
-                            <li>ФГИС Меркурий</li>
-                            <li>ЕГАИС</li>
-                            <li>Клиент-банк</li>
-                            <li>Директ-банк</li>
-                            <li>Торговое оборудование</li>
+                            <li><a class="link" href="##">ФГИС Меркурий</a></li>
+                            <li><a class="link" href="##">ЕГАИС</a></li>
+                            <li><a class="link" href="##">Клиент-банк</a></li>
+                            <li><a class="link" href="##">Директ-банк</a></li>
+                            <li><a class="link" href="##">Торговое оборудование</a></li>
                         </ul>
                     </div>
                     <details class="footer__show-more">
@@ -839,61 +843,4 @@
         </div>
     </body>
     <script src="js/main.min.js"></script>
-
-    <!-- Служебный скрипт для позиционирования макета -->
-    <script>
-        console.log(
-            "Чтобы правильно наложить макет, сдвиньте его на " +
-                Math.ceil((window.innerWidth - document.documentElement.clientWidth) / 2) +
-                " пикселей влево"
-        );
-    </script>
-
-    <!-- Обработка форм отправки -->
-    <script>
-        const requestForms = document.querySelectorAll(".request-form");
-        const handleSubmit = (event) => {
-            event.preventDefault();
-            alert("Спасибо за проявленный интерес! Мы с Вами свяжемся!");
-        };
-        requestForms.forEach(function (item) {
-            item.addEventListener("submit", handleSubmit);
-        });
-
-        // Обработка смены региона для указания номера телефона
-
-        const region = document.querySelectorAll(".region-list-item");
-        const activeRegionFields = document.querySelectorAll(".active-region");
-        const phoneInput = document.querySelectorAll(".phone-input");
-
-        const changeRegion = (event) => {
-            activeRegionFields.forEach(function (item) {
-                activeRegion = event.target.innerText;
-                item.innerText = activeRegion + "*";
-
-                switch (activeRegion) {
-                    case "RU":
-                        phoneInput.forEach(function (item) {
-                            item.value = "+7";
-                        });
-                        break;
-
-                    case "BY":
-                        phoneInput.forEach(function (item) {
-                            item.value = "+375";
-                        });
-                        break;
-
-                    case "KZ":
-                        phoneInput.forEach(function (item) {
-                            item.value = "7";
-                        });
-                        break;
-                }
-            });
-        };
-        region.forEach(function (item) {
-            item.addEventListener("click", changeRegion);
-        });
-    </script>
 </html>
