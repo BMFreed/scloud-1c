@@ -15,12 +15,15 @@
 
         &_phone {
             justify-content: flex-start;
+            padding: 0px 28px;
 
             input {
                 border: none;
                 outline: none;
                 font: inherit;
                 color: inherit;
+                padding: 22px 0px;
+                width: 100%;
             }
         }
     }
