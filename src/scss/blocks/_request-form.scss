@@ -1,0 +1,90 @@
+.request-form {
+    font-size: $main-font-size * 1.125;
+
+    &__field-container {
+        justify-content: flex-start;
+        gap: 24px;
+        margin-bottom: 4px;
+    }
+    &__input {
+        border: 1px solid #b6b6b6;
+        border-radius: $main-border-radius;
+        width: 384px;
+        padding: 22px 28px;
+        outline: none;
+
+        &_phone {
+            justify-content: flex-start;
+
+            input {
+                border: none;
+                outline: none;
+                font: inherit;
+                color: inherit;
+            }
+        }
+    }
+
+    &__country-select {
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-right: 22px;
+
+        summary {
+            color: $secondary-text-color;
+            &::after {
+                @include details-arrow("%23999");
+            }
+        }
+
+        &[open] {
+            & > .request-form__submenu {
+                animation: slide 0.3s ease-in-out;
+            }
+            summary::after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__submenu {
+        position: absolute;
+        flex-direction: column;
+        background-color: $bright;
+        border: 1px solid #b6b6b6;
+        border-radius: $main-border-radius;
+        transform: translateX(-20px);
+        box-shadow: 4px 8px 13px 2px rgba(34, 60, 80, 0.33);
+        padding: 10px 0px;
+
+        li {
+            padding: 10px 20px;
+            @include hover-line;
+        }
+    }
+
+    &__submit-container {
+        justify-content: flex-start;
+    }
+
+    &__required {
+        margin-bottom: 40px;
+    }
+
+    &__terms {
+        line-height: 20px;
+    }
+
+    &__required,
+    &__terms {
+        font-size: $main-font-size - 2;
+        color: $secondary-text-color;
+        letter-spacing: 0.02em;
+    }
+
+    &__button {
+        padding-left: 45px;
+        padding-right: 45px;
+        margin-right: 30px;
+    }
+}

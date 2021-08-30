@@ -43,6 +43,15 @@
 .--svg__header-show-more-after::after {
     content:'';
 }
+.--svg__input-show-more,.--svg__input-show-more-before::before,.--svg__input-show-more-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='10' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.145 1 3.977 4 3.976-4' stroke='%23999' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.--svg__input-show-more-before::before {
+    content:'';
+}
+.--svg__input-show-more-after::after {
+    content:'';
+}
 .--svg__minus,.--svg__minus-before::before,.--svg__minus-after::after{
     background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='16' height='4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2h12' stroke='%23F60' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
 }

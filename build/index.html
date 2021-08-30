@@ -487,21 +487,36 @@
     });
 </script>
 
-                <section class="feedback-request">
+                <section class="feedback-request feedback-request_block-margin">
     <div class="container">
-        <h2 class="heading heading_secondary">Цена на 1С: ЗУП 8 онлайн от 760 ₽ в месяц</h2>
-        <form action="">
-    <div>
-        <input type="text" placeholder="Имя*" />
-        <input type="tel" name="tel"value="+7" />
-        <input type="email" name="email" placeholder="E-mail*" />
-        <p>* Поля обязательные для заполнения</p>
+        <h2 class="feedback-request__heading heading heading_secondary">
+            Цена на 1С: ЗУП 8 онлайн от 760 &#8399; в месяц
+        </h2>
+        <form class="request-form">
+    <div class="request-form__field-container flex">
+        <input class="request-form__input" type="text" placeholder="Имя*" />
+        <div class="request-form__input request-form__input_phone flex">
+            <details class="request-form__country-select">
+                <summary class="flex active-region">RU*</summary>
+                <ul class="request-form__submenu list-common flex">
+                    <li class="region-list-item">ru</li>
+                    <li class="region-list-item">by</li>
+                    <li class="region-list-item">kz</li>
+                </ul>
+            </details>
+            <input class="margin-reset phone-input" type="tel" name="tel" value="+7" />
+        </div>
+        <input class="request-form__input" type="email" name="email" placeholder="E-mail*" />
     </div>
-    <div>
-        <button type="submit">Попробовать 14 дней бесплатно</button>
-        <p>
-            Начиная работу, я принимаю условия <span>Оферты</span> и соглашаюсь на обработку
-            персональных данных в соответствии с <span>Политикой конфиденциальности</span>
+    <p class="margin-reset request-form__required">* Поля обязательные для заполнения</p>
+    <div class="request-form__submit-container flex">
+        <button class="request-form__button button" type="submit">
+            Попробовать 14 дней бесплатно
+        </button>
+        <p class="margin-reset request-form__terms">
+            Начиная работу, я принимаю условия <a href="##" class="accent">Оферты</a> <br> и соглашаюсь на
+            обработку персональных данных в соответствии с
+            <a href="##" class="accent">Политикой конфиденциальности</a>
         </p>
     </div>
 </form>
@@ -588,18 +603,31 @@
 </section>
  <section class="start-now">
     <h2>Начните пользоваться 1С прямо сейчас</h2>
-    <form action="">
-    <div>
-        <input type="text" placeholder="Имя*" />
-        <input type="tel" name="tel"value="+7" />
-        <input type="email" name="email" placeholder="E-mail*" />
-        <p>* Поля обязательные для заполнения</p>
+    <form class="request-form">
+    <div class="request-form__field-container flex">
+        <input class="request-form__input" type="text" placeholder="Имя*" />
+        <div class="request-form__input request-form__input_phone flex">
+            <details class="request-form__country-select">
+                <summary class="flex active-region">RU*</summary>
+                <ul class="request-form__submenu list-common flex">
+                    <li class="region-list-item">ru</li>
+                    <li class="region-list-item">by</li>
+                    <li class="region-list-item">kz</li>
+                </ul>
+            </details>
+            <input class="margin-reset phone-input" type="tel" name="tel" value="+7" />
+        </div>
+        <input class="request-form__input" type="email" name="email" placeholder="E-mail*" />
     </div>
-    <div>
-        <button type="submit">Попробовать 14 дней бесплатно</button>
-        <p>
-            Начиная работу, я принимаю условия <span>Оферты</span> и соглашаюсь на обработку
-            персональных данных в соответствии с <span>Политикой конфиденциальности</span>
+    <p class="margin-reset request-form__required">* Поля обязательные для заполнения</p>
+    <div class="request-form__submit-container flex">
+        <button class="request-form__button button" type="submit">
+            Попробовать 14 дней бесплатно
+        </button>
+        <p class="margin-reset request-form__terms">
+            Начиная работу, я принимаю условия <a href="##" class="accent">Оферты</a> <br> и соглашаюсь на
+            обработку персональных данных в соответствии с
+            <a href="##" class="accent">Политикой конфиденциальности</a>
         </p>
     </div>
 </form>
@@ -719,11 +747,61 @@
         </div>
     </body>
     <script src="js/main.min.js"></script>
+
+    <!-- Служебный скрипт для позиционирования макета -->
     <script>
         console.log(
             "Чтобы правильно наложить макет, сдвиньте его на " +
                 Math.ceil((window.innerWidth - document.documentElement.clientWidth) / 2) +
                 " пикселей влево"
         );
+    </script>
+
+    <!-- Обработка форм отправки -->
+    <script>
+        const requestForms = document.querySelectorAll(".request-form");
+        const handleSubmit = (event) => {
+            event.preventDefault();
+            alert("Спасибо за проявленный интерес! Мы с Вами свяжемся!");
+        };
+        requestForms.forEach(function (item) {
+            item.addEventListener("submit", handleSubmit);
+        });
+
+        // Обработка смены региона для указания номера телефона
+
+        const region = document.querySelectorAll(".region-list-item");
+        const activeRegionFields = document.querySelectorAll(".active-region");
+        const phoneInput = document.querySelectorAll(".phone-input");
+
+        const changeRegion = (event) => {
+            activeRegionFields.forEach(function (item) {
+                activeRegion = event.target.innerText;
+                item.innerText = activeRegion + "*";
+
+                switch (activeRegion) {
+                    case "RU":
+                        phoneInput.forEach(function (item) {
+                            item.value = "+7";
+                        });
+                        break;
+
+                    case "BY":
+                        phoneInput.forEach(function (item) {
+                            item.value = "+375";
+                        });
+                        break;
+
+                    case "KZ":
+                        phoneInput.forEach(function (item) {
+                            item.value = "7";
+                        });
+                        break;
+                }
+            });
+        };
+        region.forEach(function (item) {
+            item.addEventListener("click", changeRegion);
+        });
     </script>
 </html>

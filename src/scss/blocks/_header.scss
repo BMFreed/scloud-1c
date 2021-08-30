@@ -7,7 +7,8 @@
     font-size: $main-font-size - 1;
     height: 85px;
     border-bottom: 1px solid $section-border;
-    visibility: hidden;
+    z-index: 20;
+    // visibility: hidden;
 
     &__left-content {
         margin-right: $noclip;
@@ -81,22 +82,15 @@
     &__dropdown {
         background-color: $bright;
 
-        & summary {
+        summary {
             &::after {
-                content: " ";
-                display: block;
-                width: 10px;
-                height: 6px;
-                margin-left: 10px;
-                background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='10' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 1 4 4 4-4' stroke='%23333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                background-repeat: no-repeat;
-                transition: $main-transition;
+                @include details-arrow("%23333")
             }
         }
 
         &[open] {
             & > .navigation__submenu {
-                animation: header-slide 0.3s ease-in-out;
+                animation: slide 0.3s ease-in-out;
             }
             summary::after {
                 transform: rotate(180deg);
@@ -118,16 +112,5 @@
             padding: 10px 20px;
             @include hover-line;
         }
-    }
-}
-
-@keyframes header-slide {
-    0% {
-        opacity: 0;
-        transform: translate(-20px, -10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(-20px, 0);
     }
 }

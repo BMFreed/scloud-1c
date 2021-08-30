@@ -29,6 +29,17 @@
     }
 }
 
-@mixin checkmark ($stroke) {
+@mixin checkmark($stroke) {
     background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='20' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 2 7 13 2 8' stroke='#{$stroke}' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+@mixin details-arrow($stroke) {
+    content: " ";
+    display: block;
+    width: 10px;
+    height: 6px;
+    margin-left: 10px;
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='10' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 1 4 4 4-4' stroke='#{$stroke}' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    transition: $main-transition;
 }

@@ -6,6 +6,10 @@
             margin-bottom: 80px;
         }
 
+        &-slide {
+            user-select: none;
+        }
+
         &-button-prev,
         &-button-next {
             background-color: $accent;
@@ -37,7 +41,7 @@
         }
 
         &-button-disabled {
-            background: #e2e2e2;
+            background-color: #aaaaaa;
         }
 
         &-pagination {

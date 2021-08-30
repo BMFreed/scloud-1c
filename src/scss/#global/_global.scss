@@ -11,6 +11,7 @@ html {
 
 .margin-reset {
     margin: 0;
+    padding: 0;
 }
 
 .fixed-header-margin {
@@ -68,6 +69,7 @@ html {
     font-weight: bold;
     font-size: $main-font-size - 2;
     cursor: pointer;
+    white-space: nowrap;
     padding-top: 16px;
     padding-bottom: 16px;
 
@@ -112,6 +114,10 @@ html {
         font-family: "PT Sans";
         font-weight: normal;
     }
+}
+
+.accent {
+    color: $accent;
 }
 
 .feature-list-primary {
@@ -170,4 +176,15 @@ html {
 
 .visually-hidden {
     display: none;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translate(-20px, -10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-20px, 0);
+    }
 }

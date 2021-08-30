@@ -1,15 +1,28 @@
-<form action="">
-    <div>
-        <input type="text" placeholder="Имя*" />
-        <input type="tel" name="tel"value="+7" />
-        <input type="email" name="email" placeholder="E-mail*" />
-        <p>* Поля обязательные для заполнения</p>
+<form class="request-form">
+    <div class="request-form__field-container flex">
+        <input class="request-form__input" type="text" placeholder="Имя*" />
+        <div class="request-form__input request-form__input_phone flex">
+            <details class="request-form__country-select">
+                <summary class="flex active-region">RU*</summary>
+                <ul class="request-form__submenu list-common flex">
+                    <li class="region-list-item">ru</li>
+                    <li class="region-list-item">by</li>
+                    <li class="region-list-item">kz</li>
+                </ul>
+            </details>
+            <input class="margin-reset phone-input" type="tel" name="tel" value="+7" />
+        </div>
+        <input class="request-form__input" type="email" name="email" placeholder="E-mail*" />
     </div>
-    <div>
-        <button type="submit">Попробовать 14 дней бесплатно</button>
-        <p>
-            Начиная работу, я принимаю условия <span>Оферты</span> и соглашаюсь на обработку
-            персональных данных в соответствии с <span>Политикой конфиденциальности</span>
+    <p class="margin-reset request-form__required">* Поля обязательные для заполнения</p>
+    <div class="request-form__submit-container flex">
+        <button class="request-form__button button" type="submit">
+            Попробовать 14 дней бесплатно
+        </button>
+        <p class="margin-reset request-form__terms">
+            Начиная работу, я принимаю условия <a href="##" class="accent">Оферты</a> <br> и соглашаюсь на
+            обработку персональных данных в соответствии с
+            <a href="##" class="accent">Политикой конфиденциальности</a>
         </p>
     </div>
 </form>
