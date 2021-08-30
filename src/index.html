@@ -4,31 +4,31 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="img/icon.png">
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="icon" href="img/icon.png" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
         <title>Document</title>
     </head>
     <body>
         <div class="wrapper">
             @@include('blocks/_header.html')
             <main class="main fixed-header-margin">
-                @@include('blocks/_title-section.html')
-                @@include('blocks/_features.html')
-                @@include('blocks/_advantages.html')
-                @@include('blocks/_client-types.html')
-                @@include('blocks/_comparison.html')
-                @@include('blocks/_slider.html')
+                @@include('blocks/_title-section.html') @@include('blocks/_features.html')
+                @@include('blocks/_advantages.html') @@include('blocks/_client-types.html')
+                @@include('blocks/_comparison.html') @@include('blocks/_slider.html')
                 @@include('blocks/_feedback-request.html')
-                @@include('blocks/_features-reports.html')
-                @@include('blocks/_why-us.html')
-                @@include('blocks/_more-products.html')
-                @@include('blocks/_start-now.html')
+                @@include('blocks/_features-reports.html') @@include('blocks/_why-us.html')
+                @@include('blocks/_more-products.html') @@include('blocks/_start-now.html')
             </main>
-            @@include('blocks/_footer.html') 
+            @@include('blocks/_footer.html')
         </div>
     </body>
     <script src="js/main.min.js"></script>
     <script>
-        console.log("Чтобы правильно наложить макет, сдвиньте его на "+(Math.ceil((window.innerWidth-document.documentElement.clientWidth)/2))+" пикселей влево");
+        console.log(
+            "Чтобы правильно наложить макет, сдвиньте его на " +
+                Math.ceil((window.innerWidth - document.documentElement.clientWidth) / 2) +
+                " пикселей влево"
+        );
     </script>
 </html>

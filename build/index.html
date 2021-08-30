@@ -4,8 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="img/icon.png">
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="icon" href="img/icon.png" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
         <title>Document</title>
     </head>
     <body>
@@ -96,8 +97,7 @@
         </div>
     </div>
 </section>
-
-                <section class="features features_block-margin">
+ <section class="features features_block-margin">
     <div class="features__container container">
         <h2 class="features__heading heading heading_secondary">Основные возможности</h2>
         <ul class="feature-list-primary features__list text-medium">
@@ -183,8 +183,7 @@
         </ul>
     </div>
 </section>
-
-                <section class="client-types client-types_block-margin">
+ <section class="client-types client-types_block-margin">
     <div class="container">
         <h2 class="client-types__heading heading heading_secondary">Кому подойдет 1С: ЗУП 8?</h2>
         <p class="client-types__summary margin-reset">
@@ -324,7 +323,7 @@
     </div>
 </section>
 
-                <section class="comparison">
+                <section class="comparison comparison_block-margin">
     <div class="container">
         <h2 class="comparison__heading heading heading_secondary">
             Сравнение функционала версий ПРОФ и КОРП
@@ -456,11 +455,42 @@
         </div>
     </div>
 </section>
+ <section class="slider slider_block-margin">
+    <div class="container slider__container">
+        <div class="swiper product-screenshot-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-                <section class="slider">Здесь будет слайдер</section>
-                <section class="fb-request">
-    <h2>Цена на 1С: ЗУП 8 онлайн от 760 ₽ в месяц</h2>
-    <form action="">
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".product-screenshot-swiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+                <section class="feedback-request">
+    <div class="container">
+        <h2 class="heading heading_secondary">Цена на 1С: ЗУП 8 онлайн от 760 ₽ в месяц</h2>
+        <form action="">
     <div>
         <input type="text" placeholder="Имя*" />
         <input type="tel" name="tel"value="+7" />
@@ -476,6 +506,7 @@
     </div>
 </form>
 
+    </div>
 </section>
 
                 <section class="f-reports">
@@ -487,8 +518,7 @@
         <li>Отчеты по планируемым фондам зарплаты работников компании;</li>
         <li>Отчеты по плановому и фактическому состоянию штатного расписания и многие другие.</li>
     </ul>
-</section>
-                <section class="why-us">
+</section> <section class="why-us">
     <h2>Почему пользователи выбирают Scloud?</h2>
     <div>
         <ul>
@@ -556,8 +586,7 @@
         </li>
     </ul>
 </section>
-
-                <section class="start-now">
+ <section class="start-now">
     <h2>Начните пользоваться 1С прямо сейчас</h2>
     <form action="">
     <div>
@@ -686,11 +715,15 @@
         <span>© 2019 scloud.ru ООО "СервисКлауд"</span>
     </section>
 </footer>
- 
+
         </div>
     </body>
     <script src="js/main.min.js"></script>
     <script>
-        console.log("Чтобы правильно наложить макет, сдвиньте его на "+(Math.ceil((window.innerWidth-document.documentElement.clientWidth)/2))+" пикселей влево");
+        console.log(
+            "Чтобы правильно наложить макет, сдвиньте его на " +
+                Math.ceil((window.innerWidth - document.documentElement.clientWidth) / 2) +
+                " пикселей влево"
+        );
     </script>
 </html>

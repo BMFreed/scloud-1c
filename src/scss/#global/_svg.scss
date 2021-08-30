@@ -52,3 +52,12 @@
 .--svg__minus-after::after {
     content:'';
 }
+.--svg__slider-arrow,.--svg__slider-arrow-before::before,.--svg__slider-arrow-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='40' height='40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.333 20h23.334M20 8.333 31.667 20 20 31.667' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.--svg__slider-arrow-before::before {
+    content:'';
+}
+.--svg__slider-arrow-after::after {
+    content:'';
+}

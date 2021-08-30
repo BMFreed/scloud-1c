@@ -1,1 +1,31 @@
-<section class="slider">Здесь будет слайдер</section>
+<section class="slider slider_block-margin">
+    <div class="container slider__container">
+        <div class="swiper product-screenshot-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".product-screenshot-swiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
