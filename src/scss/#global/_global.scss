@@ -131,7 +131,7 @@ html {
     &__item {
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 25px;
+        gap: 22px;
 
         &::before {
             // Изображение галочки в круге
@@ -140,7 +140,7 @@ html {
             content: "";
             display: block;
             //Задаём ширину немного больше исходной, иначе изображение отображается некорректно.
-            width: 28px;
+            width: 30px;
             height: 22px;
             margin-top: 5px;
         }

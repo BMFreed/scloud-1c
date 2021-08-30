@@ -1,0 +1,17 @@
+.reports {
+    &__heading {
+        margin-bottom: 35px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        max-width: 890px;
+    }
+
+    &__margin-fix {
+        &::before {
+            margin-right: 6px;
+        }
+    }
+}
