@@ -4,8 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="img/icon.png">
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="icon" href="img/icon.png" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
         <title>Document</title>
     </head>
     <body>
@@ -96,8 +97,7 @@
         </div>
     </div>
 </section>
-
-                <section class="features features_block-margin">
+ <section class="features features_block-margin">
     <div class="features__container container">
         <h2 class="features__heading heading heading_secondary">Основные возможности</h2>
         <ul class="feature-list-primary features__list text-medium">
@@ -183,8 +183,7 @@
         </ul>
     </div>
 </section>
-
-                <section class="client-types client-types_block-margin">
+ <section class="client-types client-types_block-margin">
     <div class="container">
         <h2 class="client-types__heading heading heading_secondary">Кому подойдет 1С: ЗУП 8?</h2>
         <p class="client-types__summary margin-reset">
@@ -324,207 +323,335 @@
     </div>
 </section>
 
-                <section class="comparison">
-    <div class="comparison__container container flex">
+                <section class="comparison comparison_block-margin">
+    <div class="container">
         <h2 class="comparison__heading heading heading_secondary">
             Сравнение функционала версий ПРОФ и КОРП
         </h2>
-        <table class="comparison__table">
-            <tbody>
-                <tr class="comparison__sub-headings">
-                    <th class="comparison__features heading heading_quaternary">Возможности</th>
-                    <th class="comparison__prof heading heading_quaternary">ПРОФ</th>
-                    <th class="comparison__corp heading heading_quaternary">КОРП</th>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Кадровый резерв и управление талантами</td>
-                    <td class="comparison__not-included"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Поддержка грейдов</td>
-                    <td class="comparison__not-included"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Адаптация, обучение и развитие</td>
-                    <td class="comparison__not-included"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Анализ расходов на персонал по проектам и направлениям деятельности</td>
-                    <td class="comparison__not-included"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Удаленный доступ для линейных руководителей и сотрудников</td>
-                    <td class="comparison__not-included"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Финансовая мотивация с использованием показателей эффективности (KPI)</td>
-                    <td class="comparison__included comparison__included_left"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Импорт значений показателей из 1С:Управление торговлей и 1С:Розница</td>
-                    <td class="comparison__included comparison__included_left"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Учет деятельности нескольких организаций</td>
-                    <td class="comparison__included comparison__included_left"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Возможность изменения (конфигурирования) прикладного решения</td>
-                    <td class="comparison__included comparison__included_left"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Учет кадров и анализ кадрового состава</td>
-                    <td class="comparison__included comparison__included_left"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Расчет и учет заработной платы</td>
-                    <td class="comparison__included comparison__included_left"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Управление денежными расчетами, включая депонирование</td>
-                    <td class="comparison__included comparison__included_left"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Исчисление налогов и страховых взносов (в т.ч. для УСН и ЕНВД)</td>
-                    <td class="comparison__included comparison__included_left"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-                <tr class="comparison__feature">
-                    <td>Подготовка регламентированной отчетности</td>
-                    <td class="comparison__included comparison__included_left"></td>
-                    <td class="comparison__included"></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="product-table flex">
+            <div class="product-table__headings flex">
+                <h4 class="product-table__heading_main heading heading_quaternary">Возможности</h4>
+                <div class="product-table__comparison flex">
+                    <h4 class="product-table__heading_secondary heading heading_quaternary">
+                        ПРОФ
+                    </h4>
+                    <h4 class="product-table__heading_secondary heading heading_quaternary">
+                        КОРП
+                    </h4>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Кадровый резерв и управление талантами</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_no"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Поддержка грейдов</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_no"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Адаптация, обучение и развитие</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_no"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">
+                    Анализ расходов на персонал по проектам и направлениям деятельности
+                </div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_no"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">
+                    Удаленный доступ для линейных руководителей и сотрудников
+                </div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_no"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">
+                    Финансовая мотивация с использованием показателей эффективности (KPI)
+                </div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">
+                    Импорт значений показателей из 1С:Управление торговлей и 1С:Розница
+                </div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Учет деятельности нескольких организаций</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">
+                    Возможность изменения (конфигурирования) прикладного решения
+                </div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Учет кадров и анализ кадрового состава</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Расчет и учет заработной платы</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">
+                    Управление денежными расчетами, включая депонирование
+                </div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">
+                    Исчисление налогов и страховых взносов (в т.ч. для УСН и ЕНВД)
+                </div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+            <div class="product-table__row product-table__row_border-reset flex">
+                <div class="product-table__feature">Подготовка регламентированной отчетности</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                    <div class="product-table__includes product-table__includes_yes"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
-                <section class="slider">Здесь будет слайдер</section>
-                <section class="fb-request">
-    <h2>Цена на 1С: ЗУП 8 онлайн от 760 ₽ в месяц</h2>
-    <form action="">
-    <div>
-        <input type="text" placeholder="Имя*" />
-        <input type="tel" name="tel"value="+7" />
-        <input type="email" name="email" placeholder="E-mail*" />
-        <p>* Поля обязательные для заполнения</p>
+ <section class="slider slider_block-margin">
+    <div class="container slider__container">
+        <div class="swiper product-screenshot-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
-    <div>
-        <button type="submit">Попробовать 14 дней бесплатно</button>
-        <p>
-            Начиная работу, я принимаю условия <span>Оферты</span> и соглашаюсь на обработку
-            персональных данных в соответствии с <span>Политикой конфиденциальности</span>
+</section>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".product-screenshot-swiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+                <section class="feedback-request feedback-request_block-margin">
+    <div class="container">
+        <h2 class="feedback-request__heading heading heading_secondary">
+            Цена на 1С: ЗУП 8 онлайн от 760 &#8399; в месяц
+        </h2>
+        <form class="request-form">
+    <div class="request-form__field-container flex">
+        <input class="request-form__input" type="text" placeholder="Имя*" />
+        <div class="request-form__input request-form__input_phone flex">
+            <details class="request-form__country-select">
+                <summary class="flex active-region">RU*</summary>
+                <ul class="request-form__submenu list-common flex">
+                    <li class="region-list-item">ru</li>
+                    <li class="region-list-item">by</li>
+                    <li class="region-list-item">kz</li>
+                </ul>
+            </details>
+            <input class="margin-reset phone-input" type="tel" name="tel" value="+7" />
+        </div>
+        <input class="request-form__input" type="email" name="email" placeholder="E-mail*" />
+    </div>
+    <p class="margin-reset request-form__required">* Поля обязательные для заполнения</p>
+    <div class="request-form__submit-container flex">
+        <button class="request-form__button button" type="submit">
+            Попробовать 14 дней бесплатно
+        </button>
+        <p class="margin-reset request-form__terms">
+            Начиная работу, я принимаю условия <a href="##" class="accent">Оферты</a> <br> и соглашаюсь на
+            обработку персональных данных в соответствии с
+            <a href="##" class="accent">Политикой конфиденциальности</a>
         </p>
     </div>
 </form>
 
+    </div>
 </section>
-
-                <section class="f-reports">
-    <h2>С какими отчетами Вы можете работать?</h2>
-    <ul>
-        <li>Формирование списков кандидатов на работу, работников компании и ее подразделений;</li>
-        <li>Составление диаграмм, графиков отпусков с фактическим использованием отпусков работников компании и ее подразделений;</li>
-        <li>Составление диаграмм планируемой занятости работников компании;</li>
-        <li>Отчеты по планируемым фондам зарплаты работников компании;</li>
-        <li>Отчеты по плановому и фактическому состоянию штатного расписания и многие другие.</li>
-    </ul>
-</section>
-                <section class="why-us">
-    <h2>Почему пользователи выбирают Scloud?</h2>
-    <div>
-        <ul>
-            <li>
-                <span>24/7</span>
-                <span>круглосуточная техническая поддержка клиентов</span>
+ <section class="reports reports_block-margin">
+    <div class="container">
+        <h2 class="reports__heading heading heading_secondary">
+            С какими отчетами Вы можете работать?
+        </h2>
+        <ul class="reports__list feature-list-primary features__list text-medium">
+            <li class="feature-list-primary__item flex">
+                Формирование списков кандидатов на работу, работников компании и ее подразделений;
             </li>
-            <li>
-                <span>8 лет</span>
-                <span>предоставления доступа к 1С онлайн в России</span>
+            <li class="feature-list-primary__item reports__gap-fix flex">
+                Составление диаграмм, графиков отпусков с фактическим использованием отпусков
+                работников компании и ее подразделений;
             </li>
-            <li>
-                <span>> 32 000</span>
-                <span>пользователей доверяют свою 1С нашему сервису</span>
+            <li class="feature-list-primary__item flex">
+                Составление диаграмм планируемой занятости работников компании;
             </li>
-            <li>
-                <span>> 200</span>
-                <span>высококвалифицированных специалистов в штате</span>
+            <li class="feature-list-primary__item flex">
+                Отчеты по планируемым фондам зарплаты работников компании;
+            </li>
+            <li class="feature-list-primary__item flex">
+                Отчеты по плановому и фактическому состоянию штатного расписания и многие другие.
             </li>
         </ul>
-        <a href="##">Узнать больше о нас</a>
     </div>
-    <svg>
-        <use xlink:href="img/sprite.svg#why-us--image"></use>
-    </svg>
 </section>
 
-                <section class="more-products">
-    <h2>Возможно вас заинтересует</h2>
-    <ul>
-        <li>
+                <section class="why-us why-us_bottom-margin">
+    <div class="container">
+        <h2 class="why-us__heading heading heading_secondary">Почему пользователи выбирают Scloud?</h2>
+        <div class="why-us__content flex">
             <div>
-                <h3>1С: Бухгалтерия ПРОФ/КОРП</h3>
-                <img src="img/more-products/shelf.svg" alt="icon">
+                <ul class="why-us__list list-common">
+                    <li class="why-us__item">
+                        <span class="why-us__merit">24/7</span>
+                        <span class="why-us__description">круглосуточная техническая поддержка клиентов</span>
+                    </li>
+                    <li class="why-us__item">
+                        <span class="why-us__merit">> 32 000</span>
+                        <span class="why-us__description">пользователей доверяют свою 1С нашему сервису</span>
+                    </li>
+                    <li class="why-us__item">
+                        <span class="why-us__merit">8 лет</span>
+                        <span class="why-us__description">предоставления доступа к 1С онлайн в России</span>
+                    </li>
+                    <li class="why-us__item">
+                        <span class="why-us__merit">> 200</span>
+                        <span class="why-us__description">высококвалифицированных специалистов в штате</span>
+                    </li>
+                </ul>
+                <a class="why-us__learn-more learn-more flex" href="##">Узнать больше о нас</a>
             </div>
-            <p>
-                Конфигурация разработана в соответствии с нормами действующего законодательства.
-                Учет хозяйственной деятельности, заработной платы, сдача отчетности в электронном
-                виде.
-            </p>
-            <a href="##">Подробнее</a>
-        </li>
-        <li>
             <div>
-                <h3>Информационно- справочная система 1С</h3>
-                <img src="img/more-products/book.svg" alt="icon">
+                <svg class="why-us__image">
+                    <use xlink:href="img/sprite.svg#why-us--image"></use>
+                </svg>
             </div>
-            <p>
-                В системе представлены новости, комментарии и консультации по вопросам
-                бухгалтерского, налогового и кадрового учета, рекомендациипо налогообложению,
-                пошаговые инструкции по их отражению в программе.
-            </p>
-            <a href="##">Подробнее</a>
-        </li>
-        <li>
-            <div>
-                <h3>1С: Отчетность</h3>
-                <img src="img/more-products/pages.svg" alt="icon">
-            </div>
-            <p>
-                Позволяет сдавать отчётность со своего ПК прямо из 1С в контролирующие органы: ФНС,
-                ПФР, ФСС, Федеральная служба государственной статистики, Росалкогольрегулирование.
-            </p>
-            <a href="##">Подробнее</a>
-        </li>
-    </ul>
+        </div>
+    </div>
+</section>
+ <section class="more-products">
+    <div class="container">
+        <h2 class="heading heading_secondary">Возможно вас заинтересует</h2>
+        <ul>
+            <li>
+                <div>
+                    <h3>1С: Бухгалтерия ПРОФ/КОРП</h3>
+                    <img src="img/more-products/shelf.svg" alt="icon">
+                </div>
+                <p>
+                    Конфигурация разработана в соответствии с нормами действующего законодательства.
+                    Учет хозяйственной деятельности, заработной платы, сдача отчетности в электронном
+                    виде.
+                </p>
+                <a href="##">Подробнее</a>
+            </li>
+            <li>
+                <div>
+                    <h3>Информационно- справочная система 1С</h3>
+                    <img src="img/more-products/book.svg" alt="icon">
+                </div>
+                <p>
+                    В системе представлены новости, комментарии и консультации по вопросам
+                    бухгалтерского, налогового и кадрового учета, рекомендациипо налогообложению,
+                    пошаговые инструкции по их отражению в программе.
+                </p>
+                <a href="##">Подробнее</a>
+            </li>
+            <li>
+                <div>
+                    <h3>1С: Отчетность</h3>
+                    <img src="img/more-products/pages.svg" alt="icon">
+                </div>
+                <p>
+                    Позволяет сдавать отчётность со своего ПК прямо из 1С в контролирующие органы: ФНС,
+                    ПФР, ФСС, Федеральная служба государственной статистики, Росалкогольрегулирование.
+                </p>
+                <a href="##">Подробнее</a>
+            </li>
+        </ul>
+    </div>
 </section>
 
                 <section class="start-now">
     <h2>Начните пользоваться 1С прямо сейчас</h2>
-    <form action="">
-    <div>
-        <input type="text" placeholder="Имя*" />
-        <input type="tel" name="tel"value="+7" />
-        <input type="email" name="email" placeholder="E-mail*" />
-        <p>* Поля обязательные для заполнения</p>
+    <form class="request-form">
+    <div class="request-form__field-container flex">
+        <input class="request-form__input" type="text" placeholder="Имя*" />
+        <div class="request-form__input request-form__input_phone flex">
+            <details class="request-form__country-select">
+                <summary class="flex active-region">RU*</summary>
+                <ul class="request-form__submenu list-common flex">
+                    <li class="region-list-item">ru</li>
+                    <li class="region-list-item">by</li>
+                    <li class="region-list-item">kz</li>
+                </ul>
+            </details>
+            <input class="margin-reset phone-input" type="tel" name="tel" value="+7" />
+        </div>
+        <input class="request-form__input" type="email" name="email" placeholder="E-mail*" />
     </div>
-    <div>
-        <button type="submit">Попробовать 14 дней бесплатно</button>
-        <p>
-            Начиная работу, я принимаю условия <span>Оферты</span> и соглашаюсь на обработку
-            персональных данных в соответствии с <span>Политикой конфиденциальности</span>
+    <p class="margin-reset request-form__required">* Поля обязательные для заполнения</p>
+    <div class="request-form__submit-container flex">
+        <button class="request-form__button button" type="submit">
+            Попробовать 14 дней бесплатно
+        </button>
+        <p class="margin-reset request-form__terms">
+            Начиная работу, я принимаю условия <a href="##" class="accent">Оферты</a> <br> и соглашаюсь на
+            обработку персональных данных в соответствии с
+            <a href="##" class="accent">Политикой конфиденциальности</a>
         </p>
     </div>
 </form>
@@ -640,11 +767,65 @@
         <span>© 2019 scloud.ru ООО "СервисКлауд"</span>
     </section>
 </footer>
- 
+
         </div>
     </body>
     <script src="js/main.min.js"></script>
+
+    <!-- Служебный скрипт для позиционирования макета -->
     <script>
-        console.log("Чтобы правильно наложить макет, сдвиньте его на "+(Math.ceil((window.innerWidth-document.documentElement.clientWidth)/2))+" пикселей влево");
+        console.log(
+            "Чтобы правильно наложить макет, сдвиньте его на " +
+                Math.ceil((window.innerWidth - document.documentElement.clientWidth) / 2) +
+                " пикселей влево"
+        );
+    </script>
+
+    <!-- Обработка форм отправки -->
+    <script>
+        const requestForms = document.querySelectorAll(".request-form");
+        const handleSubmit = (event) => {
+            event.preventDefault();
+            alert("Спасибо за проявленный интерес! Мы с Вами свяжемся!");
+        };
+        requestForms.forEach(function (item) {
+            item.addEventListener("submit", handleSubmit);
+        });
+
+        // Обработка смены региона для указания номера телефона
+
+        const region = document.querySelectorAll(".region-list-item");
+        const activeRegionFields = document.querySelectorAll(".active-region");
+        const phoneInput = document.querySelectorAll(".phone-input");
+
+        const changeRegion = (event) => {
+            activeRegionFields.forEach(function (item) {
+                activeRegion = event.target.innerText;
+                item.innerText = activeRegion + "*";
+
+                switch (activeRegion) {
+                    case "RU":
+                        phoneInput.forEach(function (item) {
+                            item.value = "+7";
+                        });
+                        break;
+
+                    case "BY":
+                        phoneInput.forEach(function (item) {
+                            item.value = "+375";
+                        });
+                        break;
+
+                    case "KZ":
+                        phoneInput.forEach(function (item) {
+                            item.value = "7";
+                        });
+                        break;
+                }
+            });
+        };
+        region.forEach(function (item) {
+            item.addEventListener("click", changeRegion);
+        });
     </script>
 </html>
