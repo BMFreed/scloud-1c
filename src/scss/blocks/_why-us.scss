@@ -1,11 +1,24 @@
 .why-us {
     &__heading {
-            margin-bottom: 38px
+        margin-bottom: 38px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 50px;
+        }
     }
 
     &__content {
         max-width: 1136px;
         justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__left-content {
+        margin-top: 20px;
+
+        @media (max-width: $laptop) {
+            margin-left: 6px;
+        }
     }
 
     &__list {
@@ -16,23 +29,42 @@
         row-gap: 52px;
         column-gap: 40px;
         margin-bottom: 30px;
+
+        @media (max-width: $laptop) {
+            row-gap: 32px;
+            column-gap: 60px;
+            margin-bottom: -6px;
+        }
     }
 
     &__item {
         max-width: 290px;
+
+        @media (max-width: $laptop) {
+            max-width: 200px;
+        }
     }
 
     &__merit {
         color: $merit;
         font-family: "PT Sans Caption";
         font-weight: bold;
-        font-size: 32px;
+        font-size: $main-font-size * 2;
         margin-bottom: 10px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 5px;
+        }
     }
 
     &__description {
-        font-size: 20px;
+        font-size: $main-font-size * 1.25;
         line-height: 30px;
+
+        @media (max-width: $laptop) {
+            font-size: $main-font-size * 1.125;
+            line-height: 28px;
+        }
     }
 
     &__merit,
@@ -43,14 +75,22 @@
     &__image {
         width: 464px;
         height: 333px;
-        margin-bottom: 18px;
+
+        @media (max-width: $laptop) {
+            width: 435px;
+            height: 312px;
+        }
     }
 
     &__learn-more {
         justify-content: flex-start;
     }
 
-    &_bottom-margin {
-        margin-bottom: 104px;
+    &_block-margin {
+        margin-bottom: 122px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 108px;
+        }
     }
 }

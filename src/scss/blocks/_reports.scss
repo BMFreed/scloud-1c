@@ -15,5 +15,9 @@
 
     &_block-margin {
         margin-bottom: 134px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 92px;
+        }
     }
 }

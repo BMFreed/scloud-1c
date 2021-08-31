@@ -1,10 +1,18 @@
 .comparison {
     &__heading {
         margin-bottom: 45px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 42px;
+        }
     }
 
     &_block-margin {
         margin-bottom: 40px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 46px;
+        }
     }
 }
 
@@ -31,7 +39,8 @@
         margin-left: 60px;
     }
 
-    &__heading_secondary, &__includes {
+    &__heading_secondary,
+    &__includes {
         min-width: 58px;
         text-align: center;
     }
@@ -48,6 +57,11 @@
     &__comparison {
         margin-right: 104px;
         gap: 158px;
+
+        @media (max-width: $laptop) {
+            margin-right: 48px;
+            gap: 126px;
+        }
     }
 
     &__includes {

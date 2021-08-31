@@ -3,11 +3,27 @@
         margin-bottom: 52px;
     }
 
-    .request-form__button {
-        margin-right: 48px;
+    .request-form {
+        &__required {
+            @media (max-width: $laptop) {
+                margin-bottom: 36px;
+            }
+        }
+
+        &__button {
+            margin-right: 48px;
+
+            @media (max-width: $laptop) {
+                margin-right: 25px;
+            }
+        }
     }
 
     &_block-margin {
         margin-bottom: 108px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 140px;
+        }
     }
 }

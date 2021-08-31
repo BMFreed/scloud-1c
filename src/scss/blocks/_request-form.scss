@@ -1,28 +1,46 @@
 .request-form {
     font-size: $main-font-size * 1.125;
 
+    @media (max-width: $laptop) {
+        font-size: $main-font-size;
+    }
+
     &__field-container {
         justify-content: flex-start;
         gap: 24px;
         margin-bottom: 4px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 10px;
+        }
     }
     &__input {
         border: 1px solid #b6b6b6;
         border-radius: $main-border-radius;
         width: 384px;
         padding: 22px 28px;
+        box-sizing: border-box;
         outline: none;
+
+        @media (max-width: $laptop) {
+            width: 314px;
+            padding: 18px;
+        }
 
         &_phone {
             justify-content: flex-start;
-            padding: 0px 28px;
+            padding: 4px 28px;
+
+            @media (max-width: $laptop) {
+                padding: 0px 18px;
+            }
 
             input {
                 border: none;
                 outline: none;
                 font: inherit;
                 color: inherit;
-                padding: 22px 0px;
+                padding: 18px 0px;
                 width: 100%;
             }
         }
@@ -32,6 +50,10 @@
         text-transform: uppercase;
         cursor: pointer;
         margin-right: 22px;
+
+        @media (max-width: $laptop) {
+            margin-right: 30px;
+        }
 
         summary {
             color: $secondary-text-color;
@@ -72,6 +94,10 @@
 
     &__required {
         margin-bottom: 40px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 30px;
+        }
     }
 
     &__terms {

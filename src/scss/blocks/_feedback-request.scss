@@ -1,9 +1,31 @@
 .feedback-request {
     &__heading {
         margin-bottom: 55px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 53px;
+        }
     }
 
     &_block-margin {
         margin-bottom: 110px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 92px;
+        }
+    }
+
+    .request-form {
+        &__terms {
+            @media (max-width: $laptop) {
+                display: none;
+            }
+        }
+
+        &__required {
+            @media (max-width: $laptop) {
+            margin-bottom: 36px;
+        }
+        }
     }
 }

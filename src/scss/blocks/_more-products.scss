@@ -1,22 +1,37 @@
 .more-products {
     &__heading {
         margin-bottom: 86px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 62px;
+        }
     }
 
     &__title {
         justify-content: flex-start;
+        align-items: flex-start;
         margin-bottom: 24px;
         line-height: 23px;
+        min-height: 46px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
         h3 {
             order: 2;
-        }
-        img {
-            margin-right: 45px;
         }
     }
 
     &__list {
         justify-content: flex-start;
+        align-items: stretch;
+        gap: 64px;
+
+        @media (max-width: $laptop) {
+            gap: 34px;
+        }
     }
 
     &__item {
@@ -25,6 +40,61 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+
+        @media (max-width: $laptop) {
+            min-height: 244px;
+        }
+
+        &:first-child {
+            min-width: 307px;
+        }
+
+        &:nth-child(2) {
+            min-width: 304px;
+        }
+    }
+
+    &__shelf,
+    &__book,
+    &__pages {
+        margin-right: 45px;
+        @media (max-width: $laptop) {
+            margin-right: 38px;
+        }
+    }
+
+    &__shelf {
+        width: 50px;
+        height: 48px;
+        margin-left: 8px;
+
+        @media (max-width: $laptop) {
+            width: 43px;
+            height: 41px;
+        }
+    }
+
+    &__book {
+        width: 82px;
+        height: 42px;
+        margin-left: 4px;
+
+        @media (max-width: $laptop) {
+            width: 46px;
+            height: 36px;
+            margin-left: 0px;
+            margin-right: 40px;
+        }
+    }
+
+    &__pages {
+        width: 51px;
+        height: 47px;
+
+        @media (max-width: $laptop) {
+            width: 42px;
+            height: 39px;
+        }
     }
 
     &__description {
@@ -33,5 +103,9 @@
 
     &_block-margin {
         margin-bottom: 112px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 132px;
+        }
     }
 }

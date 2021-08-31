@@ -23,12 +23,24 @@
         font-weight: bold;
         font-size: 18px;
         line-height: 28px;
+
+        @media (max-width: $laptop) {
+            width: 314px;
+            height: 140px;
+            font-size: $main-font-size;
+            padding: 50px 19px;
+        }
     }
 
     &__image {
         width: 60px;
         height: 60px;
         margin-top: 8px;
+
+        @media (max-width: $laptop) {
+            width: 40px;
+            height: 40px;
+        }
     }
 
     &__text-with-link {
@@ -46,5 +58,8 @@
 
     &_block-margin {
         margin-bottom: 112px;
+        @media (max-width: $laptop) {
+            margin-bottom: 92px;
+        }
     }
 }

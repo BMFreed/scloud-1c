@@ -43,7 +43,7 @@ html {
     justify-content: space-between;
 
     //Служебное свойство для облегчения вёрстки адаптива. По окончании вёрстки отключить!
-    overflow: hidden;
+    // overflow: hidden;
 
     @media (max-width: $laptop) {
         max-width: 990px;
@@ -176,6 +176,25 @@ html {
         background-repeat: no-repeat;
         background-position-y: 2px;
         padding-left: 40px;
+    }
+}
+
+.desktop-br {
+    @media (max-width: $laptop + 1) {
+        display: none;
+    }
+}
+
+.laptop-br {
+    display: none;
+    @media (max-width: $laptop) {
+        display: block;
+    }
+}
+
+.hidden-on-laptop {
+    @media (max-width: $laptop) {
+        display: none;
     }
 }
 

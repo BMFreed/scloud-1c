@@ -9,6 +9,10 @@
         letter-spacing: 0.02em;
         max-width: 1098px;
         margin-bottom: 38px;
+
+        @media (max-width: $laptop) {
+            max-width: 980px;
+        }
     }
 
     &__buttons {
@@ -29,5 +33,9 @@
 
     &_block-margin {
         margin-bottom: 115px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 96px;
+        }
     }
 }

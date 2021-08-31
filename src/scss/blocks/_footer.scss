@@ -1,8 +1,25 @@
 .footer {
-    padding-top: 64px;
+    &__border {
+        width: 992px;
+        margin: 0 auto;
+        @media (min-width: $laptop + 1) {
+            display: none;
+        }
+    }
+
+    &__container {
+        padding-top: 64px;
+        @media (max-width: $laptop) {
+            padding-top: 68px;
+        }
+    }
 
     &__products {
         margin-bottom: 84px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 52px;
+        }
     }
 
     &__list {
@@ -54,34 +71,81 @@
     &__contacts {
         justify-content: space-between;
         margin-bottom: 30px;
+
+        @media (max-width: $laptop) {
+            justify-content: flex-start;
+            gap: 26px;
+            margin-bottom: 38px;
+        }
     }
 
     &__left-content {
         gap: 35px;
         align-items: flex-start;
+
+        @media (max-width: $laptop) {
+            gap: 22px;
+            align-items: flex-end;
+        }
+    }
+
+    &__logo {
+        @media (max-width: $laptop) {
+            width: 72px;
+        }
     }
 
     &__right-content {
         margin-top: 14px;
-        gap: 42px;
+        gap: 40px;
+
+        @media (max-width: $laptop) {
+            gap: 12px;
+        }
     }
 
     &__phones {
         justify-content: flex-start;
-        margin-bottom: 17px;
+        margin-bottom: 15px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__address {
+        font-family: "PT Sans Caption";
+        font-size: $main-font-size - 2;
+        line-height: 20px;
     }
 
     &__sm {
         gap: 10px;
+
+        @media (max-width: $laptop) {
+            gap: 6px;
+        }
+
         li,
         svg {
             width: 52px;
             height: 52px;
+
+            @media (max-width: $laptop) {
+                width: 48px;
+                height: 48px;
+            }
         }
     }
 
     &__download {
         gap: 6px;
+
+        img {
+            @media (max-width: $laptop) {
+                width: 148px;
+            }
+        }
     }
 
     &__misc {
