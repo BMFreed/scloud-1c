@@ -163,6 +163,11 @@ html {
     align-items: flex-start;
     gap: 26px;
 
+    &_split {
+        display: grid;
+        grid-template-columns: 484px 1fr;
+    }
+
     &__item {
         justify-content: flex-start;
         align-items: flex-start;
