@@ -69,6 +69,11 @@
                 <span class="header__link">Вход</span>
             </button>
             <button class="header__sign-up button">Регистрация</button>
+            <button class="header__button header__burger-menu tablet-only">
+                <svg>
+                    <use xlink:href="img/sprite.svg#header--burger-menu-icon"></use>
+                </svg>
+            </button>
         </div>
     </div>
 </header>
@@ -111,7 +116,8 @@
                 Управление компетенциями и аттестация работников
             </li>
             <li class="feature-list-primary__item">
-                Возможность сдачи отчетов по каждому <br class="laptop-br" /> из сотрудников
+                Возможность сдачи отчетов по каждому <br class="laptop-br" />
+                из сотрудников
             </li>
             <li class="feature-list-primary__item">
                 Отражение начисленной зарплаты и налогов в затратах предприятия
@@ -340,8 +346,11 @@
 
                 <section class="comparison comparison_block-margin">
     <div class="container">
-        <h2 class="comparison__heading heading heading_secondary">
+        <h2 class="comparison__heading laptop-only heading heading_secondary">
             Сравнение функционала версий ПРОФ и КОРП
+        </h2>
+        <h2 class="comparison__heading tablet-only heading heading_secondary">
+            Отличия функционала версий ПРОФ и КОРП
         </h2>
         <div class="product-table flex">
             <div class="product-table__headings flex">
@@ -376,7 +385,7 @@
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div class="product-table__row product-table__row_tablet-padding flex">
                 <div class="product-table__feature">
                     Анализ расходов на персонал по проектам и направлениям деятельности
                 </div>
@@ -385,7 +394,15 @@
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div
+                class="
+                    product-table__row
+                    product-table__row
+                    product-table__row_tablet-padding
+                    product-table__row_tablet-no-border
+                    flex
+                "
+            >
                 <div class="product-table__feature">
                     Удаленный доступ для линейных руководителей и сотрудников
                 </div>
@@ -394,7 +411,7 @@
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div class="product-table__row product-table__row laptop-only flex laptop-only">
                 <div class="product-table__feature">
                     Финансовая мотивация с использованием показателей эффективности (KPI)
                 </div>
@@ -403,7 +420,7 @@
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div class="product-table__row product-table__row laptop-only flex">
                 <div class="product-table__feature">
                     Импорт значений показателей из 1С:Управление торговлей и 1С:Розница
                 </div>
@@ -412,14 +429,14 @@
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div class="product-table__row laptop-only flex">
                 <div class="product-table__feature">Учет деятельности нескольких организаций</div>
                 <div class="product-table__comparison flex">
                     <div class="product-table__includes product-table__includes_yes"></div>
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div class="product-table__row laptop-only flex">
                 <div class="product-table__feature">
                     Возможность изменения (конфигурирования) прикладного решения
                 </div>
@@ -428,21 +445,21 @@
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div class="product-table__ro product-table__row_tablet-paddingw laptop-only flex">
                 <div class="product-table__feature">Учет кадров и анализ кадрового состава</div>
                 <div class="product-table__comparison flex">
                     <div class="product-table__includes product-table__includes_yes"></div>
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div class="product-table__row laptop-only flex">
                 <div class="product-table__feature">Расчет и учет заработной платы</div>
                 <div class="product-table__comparison flex">
                     <div class="product-table__includes product-table__includes_yes"></div>
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div class="product-table__row laptop-only flex">
                 <div class="product-table__feature">
                     Управление денежными расчетами, включая депонирование
                 </div>
@@ -451,7 +468,7 @@
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row flex">
+            <div class="product-table__row laptop-only flex">
                 <div class="product-table__feature">
                     Исчисление налогов и страховых взносов (в т.ч. для УСН и ЕНВД)
                 </div>
@@ -460,7 +477,7 @@
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__row product-table__row_border-reset flex">
+            <div class="product-table__row laptop-only product-table__row_border-reset flex">
                 <div class="product-table__feature">Подготовка регламентированной отчетности</div>
                 <div class="product-table__comparison flex">
                     <div class="product-table__includes product-table__includes_yes"></div>
@@ -470,7 +487,7 @@
         </div>
     </div>
 </section>
- <section class="slider slider_block-margin">
+ <section class="slider slider_block-margin laptop-only">
     <div class="container slider__container">
         <div class="swiper product-screenshot-swiper">
             <div class="swiper-wrapper">
@@ -538,7 +555,7 @@
 
     </div>
 </section>
- <section class="reports reports_block-margin">
+ <section class="reports reports_block-margin laptop-only">
     <div class="container">
         <h2 class="reports__heading heading heading_secondary">
             С какими отчетами Вы можете работать?
@@ -564,27 +581,39 @@
     </div>
 </section>
 
-                <section class="why-us why-us_bottom-margin">
+                <section class="why-us why-us_block-margin">
     <div class="container">
-        <h2 class="why-us__heading heading heading_secondary">Почему пользователи выбирают Scloud?</h2>
+        <h2 class="why-us__heading heading heading_secondary">
+            Почему пользователи выбирают Scloud?
+        </h2>
         <div class="why-us__content flex">
-            <div>
+            <div class="why-us__left-content">
                 <ul class="why-us__list list-common">
                     <li class="why-us__item">
                         <span class="why-us__merit">24/7</span>
-                        <span class="why-us__description">круглосуточная техническая поддержка клиентов</span>
+                        <span class="why-us__description"
+                            >круглосуточная <br class="laptop-br" />
+                            техническая <br class="laptop-br" />
+                            поддержка клиентов</span
+                        >
                     </li>
                     <li class="why-us__item">
                         <span class="why-us__merit">> 32 000</span>
-                        <span class="why-us__description">пользователей доверяют свою 1С нашему сервису</span>
+                        <span class="why-us__description"
+                            >пользователей доверяют свою 1С нашему сервису</span
+                        >
                     </li>
                     <li class="why-us__item">
                         <span class="why-us__merit">8 лет</span>
-                        <span class="why-us__description">предоставления доступа к 1С онлайн в России</span>
+                        <span class="why-us__description"
+                            >предоставления доступа к 1С онлайн в России</span
+                        >
                     </li>
                     <li class="why-us__item">
                         <span class="why-us__merit">> 200</span>
-                        <span class="why-us__description">высококвалифицированных специалистов в штате</span>
+                        <span class="why-us__description"
+                            >высококвалифицированных специалистов в штате</span
+                        >
                     </li>
                 </ul>
                 <a class="why-us__learn-more learn-more flex" href="##">Узнать больше о нас</a>
@@ -601,7 +630,7 @@
     <div class="container">
         <h2 class="more-products__heading heading heading_secondary">Возможно вас заинтересует</h2>
         <ul class="more-products__list list-common flex">
-            <li class="more-products__item flex" style="margin-right: 66px">
+            <li class="more-products__item flex">
                 <div>
                     <div class="more-products__title flex">
                         <h3 class="heading heading_tertiary">
@@ -609,37 +638,17 @@
                             ПРОФ/КОРП
                         </h3>
                         <img
+                            class="more-products__shelf"
                             src="img/more-products/shelf.svg"
                             alt="icon"
-                            style="width: 50px; height: 48px; margin-left: 8px"
                         />
                     </div>
                     <p class="more-products__description margin-reset">
-                        Конфигурация разработана в соответствии с нормами действующего
-                        законодательства. <br />
+                        Конфигурация разработана <br class="laptop-br" />
+                        в соответствии с нормами действующего законодательства.
+                        <br class="desktop-br" />
                         Учет хозяйственной деятельности, заработной платы, &nbsp; сдача отчетности в
                         электронном виде.
-                    </p>
-                </div>
-                <a class="more-products__learn-more learn-more flex" href="##">Подробнее</a>
-            </li>
-            <li class="more-products__item flex" style="margin-right: 62px">
-                <div>
-                    <div class="more-products__title flex">
-                        <h3 class="heading heading_tertiary">
-                            Информационно- справочная система 1С
-                        </h3>
-                        <img
-                            src="img/more-products/book.svg"
-                            alt="icon"
-                            style="width: 82px; height: 42px; margin-left: 4px"
-                        />
-                    </div>
-                    <p class="more-products__description margin-reset">
-                        В системе представлены новости, комментарии и консультации по вопросам
-                        бухгалтерского, налогового и кадрового учета, рекомендации <br />
-                        по налогообложению, пошаговые инструкции <br />
-                        по их отражению в программе.
                     </p>
                 </div>
                 <a class="more-products__learn-more learn-more flex" href="##">Подробнее</a>
@@ -647,13 +656,34 @@
             <li class="more-products__item flex">
                 <div>
                     <div class="more-products__title flex">
-                        <h3 class="heading heading_tertiary" style="margin-bottom: 22px">
-                            1С: Отчетность
+                        <h3 class="heading heading_tertiary">
+                            Информационно- справочная система 1С
                         </h3>
                         <img
+                            class="more-products__book"
+                            src="img/more-products/book.svg"
+                            alt="icon"
+                        />
+                    </div>
+                    <p class="more-products__description margin-reset">
+                        В системе представлены новости, комментарии и консультации по вопросам
+                        бухгалтерского, налогового и кадрового <br class="laptop-br" />
+                        учета, рекомендации <br class="desktop-br" />
+                        по налогообложению, пошаговые инструкции <br class="desktop-br" />
+                        по их отражению <br class="laptop-br" />
+                        в программе.
+                    </p>
+                </div>
+                <a class="more-products__learn-more learn-more flex" href="##">Подробнее</a>
+            </li>
+            <li class="more-products__item flex laptop-only">
+                <div>
+                    <div class="more-products__title flex">
+                        <h3 class="heading heading_tertiary">1С: Отчетность</h3>
+                        <img
+                            class="more-products__pages"
                             src="img/more-products/pages.svg"
                             alt="icon"
-                            style="width: 51px; height: 47px"
                         />
                     </div>
                     <p class="more-products__description margin-reset">
@@ -704,13 +734,14 @@
 </section>
             </main>
             <footer class="footer">
-    <div class="container">
+    <hr class="footer__border" />
+    <div class="footer__container container">
         <section class="footer__products">
             <ul class="footer__list-container list-common flex">
                 <li class="footer__list flex">
                     <div>
                         <h3 class="footer__list-title margin-reset">Типовые решения</h3>
-                        <ul class="list-common">
+                        <ul class="list-common laptop-only">
                             <li><a class="link" href="##">1С: Бухгалтерия ПРОФ/КОРП</a></li>
                             <li>
                                 <a class="link" href="##"
@@ -729,7 +760,7 @@
                 <li class="footer__list flex">
                     <div>
                         <h3 class="footer__list-title margin-reset">Отраслевые решения</h3>
-                        <ul class="list-common">
+                        <ul class="list-common laptop-only">
                             <li><a class="link" href="##">1С: CRM ПРОФ</a></li>
                             <li>
                                 <a class="link" href="##"
@@ -748,7 +779,7 @@
                 <li class="footer__list flex">
                     <div>
                         <h3 class="footer__list-title margin-reset">Сервисы</h3>
-                        <ul class="list-common" style="margin-right: 34px">
+                        <ul class="list-common laptop-only" style="margin-right: 34px">
                             <li><a class="link" href="##">1С: Контрагент</a></li>
                             <li><a class="link" href="##">1C: СтартЭДО</a></li>
                             <li><a class="link" href="##">1С-Отчетность</a></li>
@@ -760,7 +791,7 @@
                 <li class="footer__list flex">
                     <div>
                         <h3 class="footer__list-title margin-reset">Доп.возможности</h3>
-                        <ul class="list-common">
+                        <ul class="list-common laptop-only">
                             <li><a class="link" href="##">ФГИС Меркурий</a></li>
                             <li><a class="link" href="##">ЕГАИС</a></li>
                             <li><a class="link" href="##">Клиент-банк</a></li>
@@ -784,14 +815,16 @@
                                 >8 800 555-91-15</a
                             >
                         </li>
-                        <span class="heading heading_tertiary">&nbsp;|&nbsp;</span>
+                        <span class="desktop-only heading heading_tertiary">&nbsp;|&nbsp;</span>
                         <li>
-                            <a class="heading heading_tertiary link" href="tel:+74957865915"
+                            <a
+                                class="desktop-only heading heading_tertiary link"
+                                href="tel:+74957865915"
                                 >+7 (495) 786-59-15</a
                             >
                         </li>
                     </ul>
-                    <ul class="list-common">
+                    <ul class="footer__address list-common">
                         <li>111024, г. Москва, ул. Авиамоторная, 69</li>
                         <li>300028, г. Тула, ул. Болдина, 98</li>
                     </ul>
@@ -831,7 +864,7 @@
                             <img src="img/footer/download/app-store-badge.svg" alt="app store" />
                         </a>
                     </li>
-                    <li>
+                    <li class="desktop-only">
                         <a href="##">
                             <img
                                 src="img/footer/download/google-play-badge.svg"
