@@ -16,7 +16,7 @@
         <div class="header__left-content flex">
             <a class="header__logo" href="#header"><img src="img/logo.svg" alt="" /></a>
             <nav class="navigation">
-                <ul class="navigation__menu flex list-common">
+                <ul class="header__nav navigation__menu flex list-common">
                     <li class="navigation__item">
                         <details class="navigation__dropdown">
                             <summary class="flex">Решения</summary>
@@ -77,7 +77,7 @@
                 <section class="title-section title-section_block-margin">
     <div class="container flex">
         <div class="title-section__text-content">
-            <h1 class="heading heading_primary">1С: Зарплата и управление персоналом 8</h1>
+            <h1 class="title-section__heading heading heading_primary">1С: Зарплата и управление персоналом 8</h1>
             <p class="title-section__price heading heading_secondary">
                 Цена - от 760 &#8399; в месяц*
             </p>
@@ -101,23 +101,24 @@
     <div class="features__container container">
         <h2 class="features__heading heading heading_secondary">Основные возможности</h2>
         <ul class="feature-list-primary features__list text-medium">
-            <li class="feature-list-primary__item flex">Учёт заработной платы</li>
-            <li class="feature-list-primary__item flex">Учет кадров и анализ кадрового состава</li>
-            <li class="feature-list-primary__item flex">
+            <li class="feature-list-primary__item">Учёт заработной платы</li>
+            <li class="feature-list-primary__item">Учет кадров и анализ кадрового состава</li>
+            <li class="feature-list-primary__item">
                 Исчисление налогов и взносов с фонда оплаты труда
             </li>
-            <li class="feature-list-primary__item flex">Автоматизация кадрового делопроизводства</li>
-            <li class="feature-list-primary__item flex">
+            <li class="feature-list-primary__item">Автоматизация кадрового делопроизводства</li>
+            <li class="feature-list-primary__item">
                 Управление компетенциями и аттестация работников
             </li>
-            <li class="feature-list-primary__item flex">
-                Возможность сдачи отчетов по каждому из сотрудников
+            <li class="feature-list-primary__item">
+                Возможность сдачи отчетов по каждому <br class="laptop-br" /> из сотрудников
             </li>
-            <li class="feature-list-primary__item flex">
+            <li class="feature-list-primary__item">
                 Отражение начисленной зарплаты и налогов в затратах предприятия
             </li>
-            <li class="feature-list-primary__item flex">
-                Управление денежными расчетами с персоналом, включая депонирование
+            <li class="feature-list-primary__item">
+                Управление денежными расчетами <br class="laptop-br" />
+                с персоналом, включая депонирование
             </li>
         </ul>
     </div>
@@ -195,8 +196,9 @@
         <ul class="client-types__buttons list-common flex">
             <li>
                 <button
-                    class="button button_hollow"
+                    class="button button_hollow button_hollow_clicked"
                     style="padding-left: 35px; padding-right: 35px"
+                    id="executives"
                 >
                     Руководителям
                 </button>
@@ -205,6 +207,7 @@
                 <button
                     class="button button_hollow"
                     style="padding-left: 36px; padding-right: 36px"
+                    id="accountants-hr"
                 >
                     Бухгалтерам и отделу кадров
                 </button>
@@ -213,6 +216,7 @@
                 <button
                     class="button button_hollow"
                     style="padding-left: 43px; padding-right: 43px"
+                    id="employees"
                 >
                     Сотрудникам
                 </button>
@@ -221,12 +225,13 @@
                 <button
                     style="padding-left: 28px; padding-right: 28px"
                     class="button button_hollow"
+                    id="hr"
                 >
                     HR
                 </button>
             </li>
         </ul>
-        <section class="executives">
+        <section id="executives" class="client-types__type">
             <h3 class="visually-hidden">Руководителям</h3>
             <ul class="client-types__list list-common">
                 <li>
@@ -234,12 +239,12 @@
                         Руководство компании
                     </h4>
                     <ul class="feature-list-secondary flex">
-                        <li class="feature-list-secondary__item flex">Качество персонала</li>
-                        <li class="feature-list-secondary__item flex">
+                        <li class="feature-list-secondary__item">Качество персонала</li>
+                        <li class="feature-list-secondary__item">
                             Эффективность процессов управления персоналом
                         </li>
-                        <li class="feature-list-secondary__item flex">Затраты на персонал</li>
-                        <li class="feature-list-secondary__item flex">
+                        <li class="feature-list-secondary__item">Затраты на персонал</li>
+                        <li class="feature-list-secondary__item">
                             Производительность труда и выполнение KPI
                         </li>
                     </ul>
@@ -249,75 +254,85 @@
                         Руководство подразделений
                     </h4>
                     <ul class="feature-list-secondary flex">
-                        <li class="feature-list-secondary__item flex">Квалификация персонала</li>
-                        <li class="feature-list-secondary__item flex">Загрузка сотрудников</li>
-                        <li class="feature-list-secondary__item flex">
+                        <li class="feature-list-secondary__item">Квалификация персонала</li>
+                        <li class="feature-list-secondary__item">Загрузка сотрудников</li>
+                        <li class="feature-list-secondary__item">
                             Эффективность системы мотивации
                         </li>
-                        <li class="feature-list-secondary__item flex">
+                        <li class="feature-list-secondary__item">
                             Предложения по изменению мотивации
                         </li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <section class="accountants-hr visually-hidden">
+        <section id="accountants-hr" class="client-types__type visually-hidden">
             <h3 class="visually-hidden">Бухгалтерам и отделу кадров</h3>
-            <ul class="client-types__list">
+            <ul class="client-types__list list-common">
                 <li>
                     <h4 class="client-types__sub-heading heading heading_quaternary">
                         Бухгалтерия
                     </h4>
-                    <ul class="feature-list-secondary">
-                        <li class="feature-list-secondary__item flex">
+                    <ul class="feature-list-secondary flex">
+                        <li class="feature-list-secondary__item">
                             Структура начисления зарплаты
                         </li>
-                        <li class="feature-list-secondary__item flex">
+                        <li class="feature-list-secondary__item">
                             Данные для расчета налогов и выплат в фонды
                         </li>
-                        <li class="feature-list-secondary__item flex">
+                        <li class="feature-list-secondary__item">
                             Начисление и выплата зарплаты, налогов
                         </li>
-                        <li class="feature-list-secondary__item flex">Бюджет затрат на персонал</li>
-                        <li class="feature-list-secondary__item flex">Исполнение бюджета</li>
-                        <li class="feature-list-secondary__item flex">Отклонения от бюджета</li>
+                        <li class="feature-list-secondary__item">Бюджет затрат на персонал</li>
+                        <li class="feature-list-secondary__item">Исполнение бюджета</li>
+                        <li class="feature-list-secondary__item">Отклонения от бюджета</li>
                     </ul>
                 </li>
                 <li>
                     <h4 class="client-types__sub-heading heading heading_quaternary">
                         Отдел кадров
                     </h4>
-                    <ul class="feature-list-secondary">
-                        <li>Качетственный состав работников</li>
-                        <li>Данные о сотрудниках</li>
-                        <li>Перемещение кадров</li>
+                    <ul class="feature-list-secondary flex">
+                        <li class="feature-list-secondary__item">
+                            Качетственный состав работников
+                        </li>
+                        <li class="feature-list-secondary__item">Данные о сотрудниках</li>
+                        <li class="feature-list-secondary__item">Перемещение кадров</li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <section class="employees visually-hidden">
+        <section id="employees" class="client-types__type visually-hidden">
             <h3 class="visually-hidden">Сотрудникам</h3>
-            <ul class="feature-list-secondary">
-                <li>Начисленная зарплата</li>
-                <li>Оставшиеся дни отпуска</li>
-                <li>Заявки на отпуск</li>
-                <li>Заявки на обучение</li>
-                <li>Отработанное время</li>
-                <li>Заявки на отпуск</li>
+            <ul class="feature-list-secondary feature-list-secondary_split flex">
+                <div class="feature-list-secondary flex">
+                    <li class="feature-list-secondary__item">Начисленная зарплата</li>
+                    <li class="feature-list-secondary__item">Оставшиеся дни отпуска</li>
+                    <li class="feature-list-secondary__item">Заявки на отпуск</li>
+                </div>
+                <div class="feature-list-secondary flex">
+                    <li class="feature-list-secondary__item">Заявки на обучение</li>
+                    <li class="feature-list-secondary__item">Отработанное время</li>
+                    <li class="feature-list-secondary__item">Заявки на отпуск</li>
+                </div>
             </ul>
         </section>
-        <section class="hr visually-hidden">
+        <section id="hr" class="client-types__type visually-hidden">
             <h3 class="visually-hidden">HR</h3>
-            <ul class="feature-list-secondary">
-                <li>Потребность в кадрах</li>
-                <li>Квалификация персонала</li>
-                <li>Кадровый резерв</li>
-                <li>Затраты на персонал</li>
-                <li>Загрузка сотрудников</li>
-                <li>Кадровый план</li>
-                <li>Информация о кандидатах</li>
-                <li>Планы обучения</li>
-                <li>Результаты обучения</li>
+            <ul class="feature-list-secondary feature-list-secondary_split flex">
+                <div class="feature-list-secondary flex">
+                    <li class="feature-list-secondary__item">Потребность в кадрах</li>
+                    <li class="feature-list-secondary__item">Квалификация персонала</li>
+                    <li class="feature-list-secondary__item">Кадровый резерв</li>
+                    <li class="feature-list-secondary__item">Затраты на персонал</li>
+                    <li class="feature-list-secondary__item">Загрузка сотрудников</li>
+                </div>
+                <div class="feature-list-secondary flex">
+                    <li class="feature-list-secondary__item">Кадровый план</li>
+                    <li class="feature-list-secondary__item">Информация о кандидатах</li>
+                    <li class="feature-list-secondary__item">Планы обучения</li>
+                    <li class="feature-list-secondary__item">Результаты обучения</li>
+                </div>
             </ul>
         </section>
     </div>
@@ -529,20 +544,20 @@
             С какими отчетами Вы можете работать?
         </h2>
         <ul class="reports__list feature-list-primary features__list text-medium">
-            <li class="feature-list-primary__item flex">
+            <li class="feature-list-primary__item">
                 Формирование списков кандидатов на работу, работников компании и ее подразделений;
             </li>
-            <li class="feature-list-primary__item reports__gap-fix flex">
+            <li class="feature-list-primary__item">
                 Составление диаграмм, графиков отпусков с фактическим использованием отпусков
                 работников компании и ее подразделений;
             </li>
-            <li class="feature-list-primary__item flex">
+            <li class="feature-list-primary__item">
                 Составление диаграмм планируемой занятости работников компании;
             </li>
-            <li class="feature-list-primary__item flex">
+            <li class="feature-list-primary__item">
                 Отчеты по планируемым фондам зарплаты работников компании;
             </li>
-            <li class="feature-list-primary__item flex">
+            <li class="feature-list-primary__item">
                 Отчеты по плановому и фактическому состоянию штатного расписания и многие другие.
             </li>
         </ul>
@@ -696,13 +711,15 @@
                     <div>
                         <h3 class="footer__list-title margin-reset">Типовые решения</h3>
                         <ul class="list-common">
-                            <li>1С: Бухгалтерия ПРОФ/КОРП</li>
+                            <li><a class="link" href="##">1С: Бухгалтерия ПРОФ/КОРП</a></li>
                             <li>
-                                1С: Зарплата и управление <br />
-                                персоналом ПРОФ/КОРП
+                                <a class="link" href="##"
+                                    >1С: Зарплата и управление <br />
+                                    персоналом ПРОФ/КОРП
+                                </a>
                             </li>
-                            <li>1С: Комплексная автоматизация</li>
-                            <li>1С: Управление нашей фирмой</li>
+                            <li><a class="link" href="##">1С: Комплексная автоматизация</a></li>
+                            <li><a class="link" href="##">1С: Управление нашей фирмой</a></li>
                         </ul>
                     </div>
                     <details class="footer__show-more">
@@ -713,13 +730,15 @@
                     <div>
                         <h3 class="footer__list-title margin-reset">Отраслевые решения</h3>
                         <ul class="list-common">
-                            <li>1С: CRM ПРОФ</li>
+                            <li><a class="link" href="##">1С: CRM ПРОФ</a></li>
                             <li>
-                                1С: Учет в управляющих <br />
-                                компаниях ЖКХ, ТСЖ и ЖСК
+                                <a class="link" href="##"
+                                    >1С: Учет в управляющих <br />
+                                    компаниях ЖКХ, ТСЖ и ЖСК</a
+                                >
                             </li>
-                            <li>1С: Автосервис</li>
-                            <li>1С: Салон Красоты</li>
+                            <li><a class="link" href="##">1С: Автосервис</a></li>
+                            <li><a class="link" href="##">1С: Салон Красоты</a></li>
                         </ul>
                     </div>
                     <details class="footer__show-more">
@@ -730,11 +749,11 @@
                     <div>
                         <h3 class="footer__list-title margin-reset">Сервисы</h3>
                         <ul class="list-common" style="margin-right: 34px">
-                            <li>1С: Контрагент</li>
-                            <li>1C: СтартЭДО</li>
-                            <li>1С-Отчетность</li>
-                            <li>1С: Контрагент</li>
-                            <li>1СПАРК Риски</li>
+                            <li><a class="link" href="##">1С: Контрагент</a></li>
+                            <li><a class="link" href="##">1C: СтартЭДО</a></li>
+                            <li><a class="link" href="##">1С-Отчетность</a></li>
+                            <li><a class="link" href="##">1С: Контрагент</a></li>
+                            <li><a class="link" href="##"> 1СПАРК Риски</a></li>
                         </ul>
                     </div>
                 </li>
@@ -742,11 +761,11 @@
                     <div>
                         <h3 class="footer__list-title margin-reset">Доп.возможности</h3>
                         <ul class="list-common">
-                            <li>ФГИС Меркурий</li>
-                            <li>ЕГАИС</li>
-                            <li>Клиент-банк</li>
-                            <li>Директ-банк</li>
-                            <li>Торговое оборудование</li>
+                            <li><a class="link" href="##">ФГИС Меркурий</a></li>
+                            <li><a class="link" href="##">ЕГАИС</a></li>
+                            <li><a class="link" href="##">Клиент-банк</a></li>
+                            <li><a class="link" href="##">Директ-банк</a></li>
+                            <li><a class="link" href="##">Торговое оборудование</a></li>
                         </ul>
                     </div>
                     <details class="footer__show-more">
@@ -839,61 +858,4 @@
         </div>
     </body>
     <script src="js/main.min.js"></script>
-
-    <!-- Служебный скрипт для позиционирования макета -->
-    <script>
-        console.log(
-            "Чтобы правильно наложить макет, сдвиньте его на " +
-                Math.ceil((window.innerWidth - document.documentElement.clientWidth) / 2) +
-                " пикселей влево"
-        );
-    </script>
-
-    <!-- Обработка форм отправки -->
-    <script>
-        const requestForms = document.querySelectorAll(".request-form");
-        const handleSubmit = (event) => {
-            event.preventDefault();
-            alert("Спасибо за проявленный интерес! Мы с Вами свяжемся!");
-        };
-        requestForms.forEach(function (item) {
-            item.addEventListener("submit", handleSubmit);
-        });
-
-        // Обработка смены региона для указания номера телефона
-
-        const region = document.querySelectorAll(".region-list-item");
-        const activeRegionFields = document.querySelectorAll(".active-region");
-        const phoneInput = document.querySelectorAll(".phone-input");
-
-        const changeRegion = (event) => {
-            activeRegionFields.forEach(function (item) {
-                activeRegion = event.target.innerText;
-                item.innerText = activeRegion + "*";
-
-                switch (activeRegion) {
-                    case "RU":
-                        phoneInput.forEach(function (item) {
-                            item.value = "+7";
-                        });
-                        break;
-
-                    case "BY":
-                        phoneInput.forEach(function (item) {
-                            item.value = "+375";
-                        });
-                        break;
-
-                    case "KZ":
-                        phoneInput.forEach(function (item) {
-                            item.value = "7";
-                        });
-                        break;
-                }
-            });
-        };
-        region.forEach(function (item) {
-            item.addEventListener("click", changeRegion);
-        });
-    </script>
 </html>
