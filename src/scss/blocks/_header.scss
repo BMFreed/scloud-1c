@@ -5,17 +5,35 @@
     width: 100%;
     background-color: $bright;
     font-size: $main-font-size - 1;
-    height: 85px;
+    height: 84px;
     border-bottom: 1px solid $section-border;
     z-index: 20;
-    // visibility: hidden;
+
+    //Служебное свойство для облегчения адаптива. По окончании вёрстки отключить!
+    visibility: hidden;
 
     &__left-content {
         margin-right: $noclip;
+
+        @media (max-width: $laptop) {
+            margin-right: $noclip + 5;
+        }
     }
 
     &__logo {
         margin-right: 66px;
+
+        @media (max-width: $laptop) {
+            margin-right: $noclip;
+        }
+    }
+
+    &__nav {
+        margin-right: 50px;
+
+        @media (max-width: $laptop) {
+            margin-right: 28px;
+        }
     }
 
     &__button {
@@ -43,12 +61,26 @@
 
     &__search {
         margin-right: 36px;
+
+        @media (max-width: $laptop) {
+            margin-right: 32px;
+        }
     }
 
     &__login {
         gap: 8px;
         margin-right: 22px;
         font-size: 14px;
+
+        @media (max-width: $laptop) {
+            margin-right: 20px;
+        }
+
+        svg {
+            @media (max-width: $laptop) {
+                display: none;
+            }
+        }
     }
 
     &__link {
@@ -65,13 +97,21 @@
     &__sign-up {
         padding-left: 36px;
         padding-right: 36px;
+
+        @media (max-width: $laptop) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
     }
 }
 
 .navigation {
     &__menu {
         gap: 30px;
-        margin-right: 50px;
+
+        @media (max-width: $laptop) {
+            gap: 19px;
+        }
     }
 
     &__item {
@@ -84,7 +124,7 @@
 
         summary {
             &::after {
-                @include details-arrow("%23333")
+                @include details-arrow("%23333");
             }
         }
 

@@ -1,36 +1,57 @@
 .title-section {
+    &__heading {
+        margin-bottom: 35px;
+    }
+
     &__text-content {
         max-width: 690px;
     }
 
     &__price {
-        margin-top: 35px;
+        margin-bottom: 33px;
         color: $accent;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 30px;
+        }
     }
 
     &__description {
-        margin-top: 33px;
+        margin-bottom: 40px;
         max-width: 628px;
+
+        @media (max-width: $laptop) {
+            max-width: 580px;
+        }
     }
 
     &__try {
-        margin-top: 40px;
+        margin-bottom: 18px;
         padding-left: 30px;
         padding-right: 30px;
     }
 
     &__notice {
-        margin-top: 18px;
         color: lighten($secondary-text-color, 20%);
     }
 
     &__image {
         width: 484px;
         height: 307px;
-        margin-top: 10px;
+        margin-top: 14px;
+
+        @media (max-width: $laptop) {
+            width: 398px;
+            height: 252px;
+            margin-top: 74px;
+        }
     }
 
     &_block-margin {
-        margin-bottom: 110px;
+        margin-bottom: 118px;
+
+        @media (max-width: $laptop) {
+            margin-bottom: 100px;
+        }
     }
 }
