@@ -81,14 +81,19 @@ html {
         background-color: darken($accent, 5%);
     }
 
+    &:focus {
+        outline: none;
+    }
+
     &_hollow {
         background: none;
         border: 2px solid $neutral-border-color;
         color: $main-text-color;
 
-        &:focus,
+        &_clicked,
         &:hover {
             background: none;
+            outline: none;
             border-color: $accent;
             color: $accent;
         }
@@ -165,15 +170,14 @@ html {
 
         &::before {
             //Изображение галочки
-            // background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='20' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 2 7 13 2 8' stroke='%23F60' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
             @include checkmark("%23F60");
             background-repeat: no-repeat;
             content: "";
             display: block;
             //Снова задаём чуть больше места для корректного отображения.
             width: 22px;
-            height: 16px;
-            background-position: -1px 3px;
+            height: 18px;
+            background-position: 0px 3px;
         }
     }
 }
