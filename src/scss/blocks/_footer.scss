@@ -1,15 +1,20 @@
 .footer {
     &__border {
         width: 992px;
+        max-width: 100vw;
         margin: 0 auto;
         @media (min-width: $laptop + 1) {
             display: none;
+        }
+
+        @media (max-width: $tablet) {
+            width: 640px;
         }
     }
 
     &__container {
         padding-top: 64px;
-        @media (max-width: $laptop) {
+        @media (min-width: $tablet + 1) and (max-width: $laptop) {
             padding-top: 68px;
         }
     }
@@ -20,6 +25,10 @@
         @media (max-width: $laptop) {
             margin-bottom: 52px;
         }
+
+        @media (max-width: $tablet) {
+            margin-bottom: 40px;
+        }
     }
 
     &__list {
@@ -27,6 +36,11 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+
+        @media (max-width: $tablet) {
+            min-height: unset;
+        }
+
         ul {
             line-height: 28px;
         }
@@ -44,8 +58,13 @@
 
         &-title {
             font-family: "PT Sans";
-            font-size: 16px;
+            font-size: $main-font-size;
             margin-bottom: 24px;
+
+            @media (max-width: $tablet) {
+                font-size: $main-font-size - 2;
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -58,6 +77,10 @@
 
             &::after {
                 transform: rotate(90deg);
+            }
+
+            @media (max-width: $tablet) {
+                display: none;
             }
         }
 
@@ -77,6 +100,12 @@
             gap: 26px;
             margin-bottom: 38px;
         }
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 19px;
+        }
     }
 
     &__left-content {
@@ -87,10 +116,16 @@
             gap: 22px;
             align-items: flex-end;
         }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            gap: unset;
+            justify-content: space-between;
+        }
     }
 
     &__logo {
-        @media (max-width: $laptop) {
+        @media (min-width: $tablet + 1) and (max-width: $laptop) {
             width: 72px;
         }
     }
@@ -102,6 +137,11 @@
         @media (max-width: $laptop) {
             gap: 12px;
         }
+
+        @media (max-width: $tablet) {
+            align-self: flex-start;
+            gap: 24px;
+        }
     }
 
     &__phones {
@@ -111,12 +151,28 @@
         @media (max-width: $laptop) {
             margin-bottom: 5px;
         }
+
+        @media (max-width: $tablet) {
+            display: inline-block;
+            width: 100%;
+
+            a {
+                font-size: $main-font-size * 1.125;
+            }
+        }
     }
 
     &__address {
         font-family: "PT Sans Caption";
         font-size: $main-font-size - 2;
         line-height: 20px;
+    }
+
+    &__phones,
+    &__address {
+        @media (max-width: $tablet) {
+            text-align: right;
+        }
     }
 
     &__sm {
@@ -126,12 +182,16 @@
             gap: 6px;
         }
 
+        @media (max-width: $tablet) {
+            gap: 4px;
+        }
+
         li,
         svg {
             width: 52px;
             height: 52px;
 
-            @media (max-width: $laptop) {
+            @media (min-width: $tablet + 1) and(max-width: $laptop) {
                 width: 48px;
                 height: 48px;
             }
@@ -145,6 +205,10 @@
             @media (max-width: $laptop) {
                 width: 148px;
             }
+
+            @media (max-width: $tablet) {
+                width: 158px;
+            }
         }
     }
 
@@ -153,6 +217,11 @@
         font-family: "PT Sans Caption";
         padding: 23px 0px;
         background-color: $neutral;
+
+        @media (max-width: $tablet) {
+            font-size: $main-font-size * 0.75;
+            padding: 16px 0px;
+        }
 
         a {
             text-decoration: underline;

@@ -5,6 +5,10 @@
     &__heading {
         margin-bottom: 30px;
         align-self: flex-start;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 40px;
+        }
     }
 
     &__list {
@@ -16,6 +20,10 @@
 
         @media (max-width: $laptop) {
             margin-bottom: 94px;
+        }
+
+        @media (max-width: $tablet) {
+            margin-bottom: 71px;
         }
     }
 }

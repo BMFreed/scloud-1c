@@ -1,6 +1,10 @@
 .client-types {
     &__heading {
         margin-bottom: 27px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 31px;
+        }
     }
 
     &__summary {
@@ -13,22 +17,43 @@
         @media (max-width: $laptop) {
             max-width: 980px;
         }
+
+        @media (max-width: $tablet) {
+            font-size: $main-font-size;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
     }
 
     &__buttons {
         justify-content: flex-start;
         gap: 21px;
         margin-bottom: 40px;
+        overflow: scroll;
+
+        @media (max-width: $tablet) {
+            gap: 16px;
+            margin-bottom: 32px;
+        }
     }
 
     &__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 22px;
+
+        @media (max-width: $tablet) {
+            grid-template-columns: 1fr;
+            gap: 44px;
+        }
     }
 
     &__sub-heading {
         margin-bottom: 36px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 26px;
+        }
     }
 
     &_block-margin {
@@ -36,6 +61,10 @@
 
         @media (max-width: $laptop) {
             margin-bottom: 96px;
+        }
+
+        @media (max-width: $tablet) {
+            margin-bottom: 78px;
         }
     }
 }

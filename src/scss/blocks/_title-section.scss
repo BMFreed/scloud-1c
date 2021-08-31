@@ -1,6 +1,10 @@
 .title-section {
     &__heading {
         margin-bottom: 35px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 18px;
+        }
     }
 
     &__text-content {
@@ -14,6 +18,10 @@
         @media (max-width: $laptop) {
             margin-bottom: 30px;
         }
+
+        @media (max-width: $tablet) {
+            margin-bottom: 24px;
+        }
     }
 
     &__description {
@@ -22,6 +30,11 @@
 
         @media (max-width: $laptop) {
             max-width: 580px;
+        }
+
+        @media (max-width: $tablet) {
+            max-width: unset;
+            margin-bottom: 30px;
         }
     }
 
@@ -45,6 +58,10 @@
             height: 252px;
             margin-top: 74px;
         }
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
 
     &_block-margin {
@@ -52,6 +69,10 @@
 
         @media (max-width: $laptop) {
             margin-bottom: 100px;
+        }
+
+        @media (max-width: $tablet) {
+            margin-bottom: 55px;
         }
     }
 }

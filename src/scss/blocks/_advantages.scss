@@ -8,6 +8,12 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 24px;
+
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 12px;
+        }
     }
 
     &__item {
@@ -60,6 +66,10 @@
         margin-bottom: 112px;
         @media (max-width: $laptop) {
             margin-bottom: 92px;
+        }
+
+        @media (max-width: $tablet) {
+            margin-bottom: 74px;
         }
     }
 }

@@ -5,6 +5,10 @@
         @media (max-width: $laptop) {
             margin-bottom: 42px;
         }
+
+        @media (max-width: $tablet) {
+            margin-bottom: 32px;
+        }
     }
 
     &_block-margin {
@@ -12,6 +16,10 @@
 
         @media (max-width: $laptop) {
             margin-bottom: 46px;
+        }
+
+        @media (max-width: $tablet) {
+            margin-bottom: 85px;
         }
     }
 }
@@ -23,6 +31,10 @@
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
+
+    @media (max-width: $tablet) {
+        padding-top: 44px;
+    }
 
     &__headings {
         padding-bottom: 23px;
@@ -37,6 +49,10 @@
     &__heading_main,
     &__feature {
         margin-left: 60px;
+
+        @media (max-width: $tablet) {
+            margin-left: 50px;
+        }
     }
 
     &__heading_secondary,
@@ -52,6 +68,23 @@
         &_border-reset {
             border: none;
         }
+
+        @media (max-width: $tablet) {
+            &_tablet {
+                &-padding {
+                    padding: 14px 0px;
+                }
+                &-no-border {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    &__feature {
+        @media (max-width: $tablet) {
+            max-width: 300px;
+        }
     }
 
     &__comparison {
@@ -61,6 +94,11 @@
         @media (max-width: $laptop) {
             margin-right: 48px;
             gap: 126px;
+        }
+
+        @media (max-width: $tablet) {
+            margin-right: 38px;
+            gap: 58px;
         }
     }
 

@@ -20,6 +20,10 @@ html {
     @media (max-width: $laptop) {
         margin-top: 190px;
     }
+
+    @media (max-width: $tablet) {
+        margin-top: 130px;
+    }
 }
 
 .text-medium {
@@ -48,6 +52,10 @@ html {
     @media (max-width: $laptop) {
         max-width: 990px;
     }
+
+    @media (max-width: $tablet) {
+        max-width: 640px;
+    }
 }
 
 .heading {
@@ -58,19 +66,36 @@ html {
     &_primary {
         font-size: $main-font-size * 2.5;
         line-height: 48px;
+
+        @media (max-width: $tablet) {
+            font-size: 24px;
+            line-height: 34px;
+        }
     }
 
     &_secondary {
         font-size: $main-font-size * 2;
+
+        @media (max-width: $tablet) {
+            font-size: $main-font-size * 1.5;
+        }
     }
 
     &_tertiary {
         font-size: $main-font-size * 1.125;
+
+        @media (max-width: $tablet) {
+            font-size: $main-font-size;
+        }
     }
 
     &_quaternary {
         margin: 0;
         font-size: $main-font-size * 1.25;
+
+        @media (max-width: $tablet) {
+            font-size: $main-font-size * 1.125;
+        }
     }
 }
 
@@ -107,6 +132,16 @@ html {
             outline: none;
             border-color: $accent;
             color: $accent;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        &_hollow {
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
     }
 }
@@ -155,6 +190,12 @@ html {
         background-repeat: no-repeat;
         background-position-y: 6px;
     }
+
+    @media (max-width: $tablet) {
+        font-size: $main-font-size * 1.125;
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
 }
 
 .feature-list-secondary {
@@ -187,13 +228,24 @@ html {
 
 .laptop-br {
     display: none;
-    @media (max-width: $laptop) {
+    @media (min-width: $tablet + 1) and (max-width: $laptop) {
         display: block;
     }
 }
 
-.hidden-on-laptop {
+.desktop-only {
     @media (max-width: $laptop) {
+        display: none;
+    }
+}
+.laptop-only {
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.tablet-only {
+    @media (min-width: $tablet + 1) {
         display: none;
     }
 }

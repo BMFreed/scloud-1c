@@ -5,6 +5,10 @@
         @media (max-width: $laptop) {
             margin-bottom: 62px;
         }
+
+        @media (max-width: $laptop) {
+            margin-bottom: 30px;
+        }
     }
 
     &__title {
@@ -106,6 +110,10 @@
 
         @media (max-width: $laptop) {
             margin-bottom: 132px;
+        }
+
+        @media (max-width: $laptop) {
+            margin-bottom: 75px;
         }
     }
 }

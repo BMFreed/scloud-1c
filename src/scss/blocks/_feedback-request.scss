@@ -5,6 +5,10 @@
         @media (max-width: $laptop) {
             margin-bottom: 53px;
         }
+
+        @media (max-width: $tablet) {
+            margin-bottom: 33px;
+        }
     }
 
     &_block-margin {
@@ -20,12 +24,20 @@
             @media (max-width: $laptop) {
                 display: none;
             }
+
+            @media (max-width: $tablet) {
+                display: block;
+            }
         }
 
         &__required {
             @media (max-width: $laptop) {
-            margin-bottom: 36px;
-        }
+                margin-bottom: 36px;
+            }
+
+            @media (max-width: $tablet) {
+                margin-bottom: 45px;
+            }
         }
     }
 }
