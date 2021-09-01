@@ -29,11 +29,11 @@
         justify-content: flex-start;
         gap: 21px;
         margin-bottom: 40px;
-        overflow: scroll;
 
         @media (max-width: $tablet) {
             gap: 16px;
             margin-bottom: 32px;
+            overflow: scroll;
         }
     }
 
