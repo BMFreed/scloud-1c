@@ -9,6 +9,10 @@
         @media (max-width: $tablet) {
             margin-bottom: 32px;
         }
+
+        @media (max-width: $phone) {
+            margin-bottom: 24px;
+        }
     }
 
     &_block-margin {
@@ -21,6 +25,10 @@
         @media (max-width: $tablet) {
             margin-bottom: 85px;
         }
+
+        @media (max-width: $phone) {
+            margin-bottom: 46px;
+        }
     }
 }
 
@@ -32,12 +40,31 @@
     padding-top: 50px;
     padding-bottom: 10px;
 
+    &_mobile {
+        display: none;
+    }
+
     @media (max-width: $tablet) {
         padding-top: 44px;
     }
 
+    @media (max-width: $phone) {
+        display: none;
+
+        &_mobile {
+            padding-top: 30px;
+            padding-bottom: 38px;
+            display: block;
+            box-shadow: 0px 2px 22px 0px rgba(50, 50, 50, 0.1);
+        }
+    }
+
     &__headings {
         padding-bottom: 23px;
+
+        @media (max-width: $phone) {
+            padding-bottom: 16px;
+        }
     }
 
     &__headings,
@@ -52,6 +79,17 @@
 
         @media (max-width: $tablet) {
             margin-left: 50px;
+        }
+
+        @media (max-width: $phone) {
+            margin-left: 0;
+            padding-left: 30px;
+        }
+    }
+
+    &__heading_secondary {
+        @media (max-width: $phone) {
+            margin-bottom: 20px;
         }
     }
 
@@ -79,11 +117,24 @@
                 }
             }
         }
+
+        @media (max-width: $phone) {
+            flex-direction: column;
+            border: none;
+            padding: 0;
+        }
     }
 
     &__feature {
         @media (max-width: $tablet) {
             max-width: 300px;
+        }
+
+        @media (max-width: $phone) {
+            border-bottom: 2px solid $neutral-border-color;
+            line-height: 24px;
+            padding-bottom: 28px;
+            margin-bottom: 26px;
         }
     }
 
@@ -99,6 +150,11 @@
         @media (max-width: $tablet) {
             margin-right: 38px;
             gap: 58px;
+        }
+
+        @media (max-width: $phone) {
+            margin-right: 0;
+            flex-direction: column;
         }
     }
 

@@ -5,6 +5,11 @@
         @media (max-width: $tablet) {
             margin-bottom: 18px;
         }
+
+        @media (max-width: $phone) {
+            max-width: 175px;
+            margin-bottom: 12px;
+        }
     }
 
     &__text-content {
@@ -22,6 +27,10 @@
         @media (max-width: $tablet) {
             margin-bottom: 24px;
         }
+
+        @media (max-width: $phone) {
+            margin-bottom: 20px;
+        }
     }
 
     &__description {
@@ -36,16 +45,30 @@
             max-width: unset;
             margin-bottom: 30px;
         }
+
+        @media (max-width: $phone) {
+            margin-bottom: 42px;
+        }
     }
 
     &__try {
         margin-bottom: 18px;
         padding-left: 30px;
         padding-right: 30px;
+
+        @media (max-width: $phone) {
+            margin-bottom: 30px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
     }
 
     &__notice {
         color: lighten($secondary-text-color, 20%);
+
+        @media (max-width: $phone) {
+            font-size: $main-font-size * 0.75;
+        }
     }
 
     &__image {
@@ -73,6 +96,10 @@
 
         @media (max-width: $tablet) {
             margin-bottom: 55px;
+        }
+
+        @media (max-width: $phone) {
+            margin-bottom: 63px;
         }
     }
 }

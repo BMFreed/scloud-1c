@@ -9,6 +9,10 @@
         @media (max-width: $tablet) {
             margin-bottom: 33px;
         }
+
+        @media (max-width: $phone) {
+            margin-bottom: 25px;
+        }
     }
 
     &_block-margin {
@@ -16,6 +20,10 @@
 
         @media (max-width: $laptop) {
             margin-bottom: 92px;
+        }
+
+        @media (max-width: $phone) {
+            margin-bottom: 60px;
         }
     }
 
@@ -37,6 +45,10 @@
 
             @media (max-width: $tablet) {
                 margin-bottom: 45px;
+            }
+
+            @media (max-width: $phone) {
+                margin-bottom: 33px;
             }
         }
     }

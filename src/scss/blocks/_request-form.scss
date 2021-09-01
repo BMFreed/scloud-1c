@@ -82,6 +82,10 @@
             margin-right: 20px;
         }
 
+        @media (max-width: $phone) {
+            margin-right: 10px;
+        }
+
         summary {
             color: $secondary-text-color;
             &::after {
@@ -117,6 +121,11 @@
 
     &__submit-container {
         justify-content: flex-start;
+
+        @media (max-width: $phone) {
+            flex-direction: column;
+            gap: 15px;
+        }
     }
 
     &__required {
@@ -128,6 +137,10 @@
 
         @media (max-width: $tablet) {
             margin-bottom: 49px;
+        }
+
+        @media (max-width: $phone) {
+            margin-left: 6px;
         }
     }
 
@@ -159,6 +172,10 @@
             padding-left: 30px;
             padding-right: 30px;
             margin-right: 25px;
+        }
+
+        @media (max-width: $phone) {
+            margin-right: 0;
         }
     }
 }

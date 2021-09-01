@@ -24,6 +24,10 @@ html {
     @media (max-width: $tablet) {
         margin-top: 130px;
     }
+
+    @media (max-width: $phone) {
+        margin-top: 124px;
+    }
 }
 
 .text-medium {
@@ -56,6 +60,11 @@ html {
     @media (max-width: $tablet) {
         max-width: 640px;
     }
+
+    @media (max-width: $phone) {
+        max-width: 290px;
+        padding: 0 $noclip-mobile;
+    }
 }
 
 .heading {
@@ -79,6 +88,10 @@ html {
         @media (max-width: $tablet) {
             font-size: $main-font-size * 1.5;
         }
+
+        @media (max-width: $phone) {
+            line-height: 34px;
+        }
     }
 
     &_tertiary {
@@ -95,6 +108,10 @@ html {
 
         @media (max-width: $tablet) {
             font-size: $main-font-size * 1.125;
+        }
+
+        @media (max-width: $phone) {
+            font-size: $main-font-size;
         }
     }
 }
@@ -196,6 +213,11 @@ html {
         grid-template-columns: 1fr;
         gap: 22px;
     }
+
+    @media (max-width: $phone) {
+        font-size: $main-font-size;
+        gap: 7px;
+    }
 }
 
 .feature-list-secondary {
@@ -206,9 +228,19 @@ html {
     align-items: flex-start;
     gap: 26px;
 
+    @media (max-width: $phone) {
+        font-size: $main-font-size - 2;
+        line-height: 24px;
+        gap: 16px;
+    }
+
     &_split {
         display: grid;
         grid-template-columns: 484px 1fr;
+
+        @media (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__item {
@@ -246,6 +278,17 @@ html {
 
 .tablet-only {
     @media (min-width: $tablet + 1) {
+        display: none;
+    }
+}
+.phone-only {
+    @media (min-width: $phone + 1) {
+        display: none;
+    }
+}
+
+.hidden-on-phones {
+    @media (max-width: $phone) {
         display: none;
     }
 }

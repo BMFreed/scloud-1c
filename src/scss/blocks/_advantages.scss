@@ -1,6 +1,10 @@
 .advantages {
     &__heading {
         margin-bottom: 34px;
+
+        @media (max-width: $phone) {
+            margin-bottom: 25px;
+        }
     }
 
     &__list {
@@ -13,6 +17,12 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
             column-gap: 12px;
+        }
+
+        @media (max-width: $phone) {
+            grid-template-columns: 1fr;
+            grid-template-rows: unset;
+            row-gap: 16px;
         }
     }
 
@@ -27,7 +37,7 @@
         box-shadow: $main-box-shadow;
         font-family: "PT Sans Caption";
         font-weight: bold;
-        font-size: 18px;
+        font-size: $main-font-size * 1.125;
         line-height: 28px;
 
         @media (max-width: $laptop) {
@@ -35,6 +45,14 @@
             height: 140px;
             font-size: $main-font-size;
             padding: 50px 19px;
+        }
+
+        @media (max-width: $phone) {
+            width: 288px;
+            height: 100px;
+            padding: 30px 20px;
+            font-size: $main-font-size - 2px;
+            gap: 19px;
         }
     }
 
@@ -70,6 +88,10 @@
 
         @media (max-width: $tablet) {
             margin-bottom: 74px;
+        }
+
+        @media (max-width: $phone) {
+            margin-bottom: 50px;
         }
     }
 }

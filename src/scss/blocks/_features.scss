@@ -9,6 +9,12 @@
         @media (max-width: $tablet) {
             margin-bottom: 40px;
         }
+
+        @media (max-width: $phone) {
+            width: 104%;
+            overflow: hidden;
+            margin-bottom: 18px;
+        }
     }
 
     &__list {
@@ -24,6 +30,10 @@
 
         @media (max-width: $tablet) {
             margin-bottom: 71px;
+        }
+
+        @media (max-width: $phone) {
+            margin-bottom: 57px;
         }
     }
 }

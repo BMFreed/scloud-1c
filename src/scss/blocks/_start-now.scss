@@ -1,9 +1,13 @@
 .start-now {
     &__heading {
-        margin-bottom: 52px;
+        margin-bottom: 54px;
 
         @media (max-width: $tablet) {
             margin-bottom: 44px;
+        }
+
+        @media (max-width: $phone) {
+            margin-bottom: 30px;
         }
     }
 
@@ -16,6 +20,10 @@
             @media (max-width: $tablet) {
                 margin-bottom: 44px;
             }
+
+            @media (max-width: $phone) {
+                margin-bottom: 33px;
+            }
         }
 
         &__button {
@@ -24,6 +32,10 @@
             @media (max-width: $laptop) {
                 margin-right: 25px;
             }
+
+            @media (max-width: $phone) {
+                margin-right: 0;
+            }
         }
     }
 
@@ -31,11 +43,15 @@
         margin-bottom: 108px;
 
         @media (max-width: $laptop) {
-            margin-bottom: 140px;
+            margin-bottom: 138px;
         }
 
         @media (max-width: $tablet) {
             margin-bottom: 65px;
+        }
+
+        @media (max-width: $phone) {
+            margin-bottom: 42px;
         }
     }
 }

@@ -9,6 +9,10 @@
         @media (max-width: $tablet) {
             margin-bottom: 30px;
         }
+
+        @media (max-width: $phone) {
+            margin-bottom: 22px;
+        }
     }
 
     &__title {
@@ -18,13 +22,21 @@
         line-height: 23px;
         min-height: 46px;
 
+        h3 {
+            order: 2;
+        }
+
         @media (max-width: $laptop) {
             margin-bottom: 20px;
             align-items: center;
         }
 
-        h3 {
-            order: 2;
+        @media (max-width: $tablet) {
+            margin-bottom: 22px;
+        }
+
+        @media (max-width: $phone) {
+            margin-bottom: 14px;
         }
     }
 
@@ -35,6 +47,11 @@
 
         @media (max-width: $laptop) {
             gap: 34px;
+        }
+
+        @media (max-width: $phone) {
+            flex-direction: column;
+            gap: 50px;
         }
     }
 
@@ -55,6 +72,14 @@
 
         &:nth-child(2) {
             min-width: 304px;
+        }
+
+        @media (max-width: $phone) {
+            min-height: unset;
+            &:first-child,
+            &:nth-child(2) {
+                min-width: unset;
+            }
         }
     }
 
@@ -103,6 +128,10 @@
 
     &__description {
         line-height: 24px;
+
+        @media (max-width: $phone) {
+            margin-bottom: 15px;
+        }
     }
 
     &_block-margin {
@@ -114,6 +143,10 @@
 
         @media (max-width: $tablet) {
             margin-bottom: 75px;
+        }
+
+        @media (max-width: $phone) {
+            margin-bottom: 62px;
         }
     }
 }

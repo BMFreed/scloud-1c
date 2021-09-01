@@ -5,6 +5,10 @@
         @media (max-width: $laptop) {
             margin-bottom: 50px;
         }
+
+        @media (max-width: $phone) {
+            margin-bottom: 30px;
+        }
     }
 
     &__content {
@@ -15,6 +19,10 @@
         @media (max-width: $tablet) {
             flex-direction: column;
             gap: 36px;
+        }
+
+        @media (max-width: $phone) {
+            gap: 24px;
         }
     }
 
@@ -27,6 +35,10 @@
 
         @media (max-width: $tablet) {
             margin: 0;
+        }
+
+        @media (max-width: $phone) {
+            width: 100%;
         }
     }
 
@@ -49,6 +61,15 @@
             row-gap: 42px;
             column-gap: 132px;
             margin-bottom: 5px;
+        }
+
+        @media (max-width: $phone) {
+            grid-template-columns: 1fr;
+            grid-template-rows: unset;
+            width: 100%;
+            justify-items: center;
+            text-align: center;
+            row-gap: 34px;
         }
     }
 
@@ -75,6 +96,11 @@
             font-size: $main-font-size * 1.25;
             margin-bottom: 18px;
         }
+
+        @media (max-width: $phone) {
+            font-size: $main-font-size * 1.5;
+            margin-bottom: 10px;
+        }
     }
 
     &__description {
@@ -84,6 +110,11 @@
         @media (max-width: $laptop) {
             font-size: $main-font-size * 1.125;
             line-height: 28px;
+        }
+
+        @media (max-width: $phone) {
+            font-size: $main-font-size;
+            line-height: 20px;
         }
     }
 
@@ -106,10 +137,21 @@
             height: 338px;
             margin-left: 35px;
         }
+
+        @media (max-width: $phone) {
+            width: 298px;
+            height: 214px;
+            margin-left: -10px;
+            overflow: hidden;
+        }
     }
 
     &__learn-more {
         justify-content: flex-start;
+
+        @media (max-width: $phone) {
+            display: none;
+        }
     }
 
     &_block-margin {
@@ -121,6 +163,10 @@
 
         @media (max-width: $tablet) {
             margin-bottom: 102px;
+        }
+
+        @media (max-width: $phone) {
+            margin-bottom: 56px;
         }
     }
 }
