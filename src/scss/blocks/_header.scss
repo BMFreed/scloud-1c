@@ -175,6 +175,10 @@
             background: none;
             color: $accent;
             padding: 0;
+
+            &:hover {
+                background: none; 
+            }
         }
     }
 
