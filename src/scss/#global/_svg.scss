@@ -34,6 +34,15 @@
 .--svg__checkmark-after::after {
     content:'';
 }
+.--svg__footer-arrow,.--svg__footer-arrow-before::before,.--svg__footer-arrow-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 6.25 6 1.75l-4.5 4.5' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.--svg__footer-arrow-before::before {
+    content:'';
+}
+.--svg__footer-arrow-after::after {
+    content:'';
+}
 .--svg__header-show-more,.--svg__header-show-more-before::before,.--svg__header-show-more-after::after{
     background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='10' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 1 4 4 4-4' stroke='%23333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }

@@ -39,6 +39,12 @@
 
         @media (max-width: $tablet) {
             min-height: unset;
+
+            li a {
+                font-size: $main-font-size - 2;
+                max-width: 170px;
+                white-space: normal;
+            }
         }
 
         ul {
@@ -64,6 +70,27 @@
             @media (max-width: $tablet) {
                 font-size: $main-font-size - 2;
                 margin-bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &::after {
+                    content: " ";
+                    display: block;
+                    width: 12px;
+                    height: 8px;
+                    margin-left: 10px;
+                    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 6.25 6 1.75l-4.5 4.5' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    transform: rotate(180deg);
+                }
+
+                &_opened {
+                    margin-bottom: 14px;
+                    &::after {
+                        transform: rotate(0deg);
+                    }
+                }
             }
         }
     }
