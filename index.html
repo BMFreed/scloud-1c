@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/style.min.css" />
         <title>1С: Зарплата и управление персоналом 8</title>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -59,7 +60,7 @@
                     <use xlink:href="img/sprite.svg#header--search"></use>
                 </svg>
             </button>
-            <a class="header__link link" href="tel:+78005559115">8 (800) 555-91-15</a>
+            <a class="header__phone header__link link" href="tel:+78005559115">8 (800) 555-91-15</a>
         </div>
         <div class="header__right-content flex">
             <button class="header__button header__login flex">
@@ -69,11 +70,7 @@
                 <span class="header__link">Вход</span>
             </button>
             <button class="header__sign-up button">Регистрация</button>
-            <button class="header__button header__burger-menu tablet-only">
-                <svg>
-                    <use xlink:href="img/sprite.svg#header--burger-menu-icon"></use>
-                </svg>
-            </button>
+            <button class="header__button header__burger-menu tablet-only"></button>
         </div>
     </div>
 </header>
@@ -445,7 +442,7 @@
                     <div class="product-table__includes product-table__includes_yes"></div>
                 </div>
             </div>
-            <div class="product-table__ro product-table__row_tablet-paddingw laptop-only flex">
+            <div class="product-table__row product-table__row_tablet-paddingw laptop-only flex">
                 <div class="product-table__feature">Учет кадров и анализ кадрового состава</div>
                 <div class="product-table__comparison flex">
                     <div class="product-table__includes product-table__includes_yes"></div>
@@ -485,17 +482,120 @@
                 </div>
             </div>
         </div>
+        <div class="swiper mobile-table-swiper">
+    <div class="swiper-wrapper">
+        <div class="product-table product-table_mobile swiper-slide flex">
+            <div class="product-table__headings flex">
+                <h4 class="product-table__heading_main heading heading_quaternary">Возможности</h4>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Кадровый резерв и управление талантами</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__mobile-block">
+                        <h4 class="product-table__heading_secondary heading heading_quaternary">
+                            ПРОФ
+                        </h4>
+                        <div class="product-table__includes product-table__includes_no"></div>
+                    </div>
+                    <div class="product-table__mobile-block">
+                        <h4 class="product-table__heading_secondary heading heading_quaternary">
+                            КОРП
+                        </h4>
+                        <div class="product-table__includes product-table__includes_yes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-table product-table_mobile swiper-slide flex">
+            <div class="product-table__headings flex">
+                <h4 class="product-table__heading_main heading heading_quaternary">Возможности</h4>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Кадровый резерв и управление талантами</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__mobile-block">
+                        <h4 class="product-table__heading_secondary heading heading_quaternary">
+                            ПРОФ
+                        </h4>
+                        <div class="product-table__includes product-table__includes_no"></div>
+                    </div>
+                    <div class="product-table__mobile-block">
+                        <h4 class="product-table__heading_secondary heading heading_quaternary">
+                            КОРП
+                        </h4>
+                        <div class="product-table__includes product-table__includes_yes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-table product-table_mobile swiper-slide flex">
+            <div class="product-table__headings flex">
+                <h4 class="product-table__heading_main heading heading_quaternary">Возможности</h4>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Кадровый резерв и управление талантами</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__mobile-block">
+                        <h4 class="product-table__heading_secondary heading heading_quaternary">
+                            ПРОФ
+                        </h4>
+                        <div class="product-table__includes product-table__includes_no"></div>
+                    </div>
+                    <div class="product-table__mobile-block">
+                        <h4 class="product-table__heading_secondary heading heading_quaternary">
+                            КОРП
+                        </h4>
+                        <div class="product-table__includes product-table__includes_yes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-table product-table_mobile swiper-slide flex">
+            <div class="product-table__headings flex">
+                <h4 class="product-table__heading_main heading heading_quaternary">Возможности</h4>
+            </div>
+            <div class="product-table__row flex">
+                <div class="product-table__feature">Кадровый резерв и управление талантами</div>
+                <div class="product-table__comparison flex">
+                    <div class="product-table__mobile-block">
+                        <h4 class="product-table__heading_secondary heading heading_quaternary">
+                            ПРОФ
+                        </h4>
+                        <div class="product-table__includes product-table__includes_no"></div>
+                    </div>
+                    <div class="product-table__mobile-block">
+                        <h4 class="product-table__heading_secondary heading heading_quaternary">
+                            КОРП
+                        </h4>
+                        <div class="product-table__includes product-table__includes_yes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mobile-table-swiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+
     </div>
 </section>
  <section class="slider slider_block-margin laptop-only">
     <div class="container slider__container">
         <div class="swiper product-screenshot-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
-                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
-                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
-                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
-                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд"></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд" /></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд" /></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд" /></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд" /></div>
+                <div class="swiper-slide flex"><img src="img/slider/slide1.jpg" alt="слайд" /></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -503,8 +603,6 @@
         </div>
     </div>
 </section>
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
@@ -521,8 +619,12 @@
 
                 <section class="feedback-request feedback-request_block-margin">
     <div class="container">
-        <h2 class="feedback-request__heading heading heading_secondary">
-            Цена на 1С: ЗУП 8 онлайн от 760 &#8399; в месяц
+        <h2 class="feedback-request__heading heading heading_secondary hidden-on-phones">
+            Цена на 1С: ЗУП 8 онлайн <span class="accent">от 760 &#8399; в месяц</span>
+        </h2>
+        <h2 class="feedback-request__heading heading heading_secondary phone-only">
+            Цена на 1С: Управление сервисным центром в облаке <br />
+            <span class="accent">от 760 &#8399; в месяц</span>
         </h2>
         <form class="request-form">
     <div class="request-form__field-container flex">
@@ -878,7 +980,7 @@
     </div>
     <section class="footer__misc">
         <div class="container flex">
-            <div>
+            <div class="hidden-on-phones">
                 <a class="link" href="##">Оферта</a>
                 <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                 <a class="link" href="##">Политика конфиденциальности</a>
