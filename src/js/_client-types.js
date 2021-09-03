@@ -1,9 +1,5 @@
 const buttons = document.querySelectorAll(".client-types__buttons > li > button");
 const clientType = document.querySelectorAll(".client-types__type");
-let selectedType = buttons[0].id;
-window.onload = function () {
-    buttons[0].focus();
-};
 
 const handleClientType = (event) => {
     selectedType = event.target.id;
