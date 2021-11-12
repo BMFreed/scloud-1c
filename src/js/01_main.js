@@ -10,20 +10,15 @@
 
 const flyouts = document.querySelectorAll("details");
 const flyoutContents = document.querySelectorAll("details >ul");
+console.log(flyouts)
 
 document.addEventListener("click", function (event) {
-    let isClickInside = false;
-    for (let i = 0; i < flyouts.length; i++) {
-        if (flyouts[i].contains(event.target)) {
-            isClickInside = true;
-        }
-    }
-
-    flyouts.forEach(function (item) {
-        if (!isClickInside) {
-            item.open = false;
-        }
-    });
+    flyouts.forEach(function (item)  {
+          if (!item.contains(event.target)) {
+              item.open = false
+          }
+      }
+    )
 });
 
 flyoutContents.forEach(function (item) {
